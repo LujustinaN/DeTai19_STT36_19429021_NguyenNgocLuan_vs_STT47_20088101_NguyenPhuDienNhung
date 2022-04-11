@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+    <!-- Slider -->
+    <link rel="stylesheet" href="assets/plugins/slider/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/owlcarousel/assets/owl.theme.default.css">
+    <script src="assets/plugins/slider/jquery.min.js"></script>
+    <script src="assets/plugins/slider/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Slider-show and slick-slider-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>GreenHOLO.com</title>
+</head>
+
+<!-- Script for slider -->
+<script>
+    $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 33,
+            nav: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    });
+</script>
+
+<style>
+    .slick-arrow {
+        position: absolute;
+        padding: 28px;
+        background-color: #e2868c;
+        border-radius: 40px;
+        top: 250px;
+    }
+
+    .slick-arrow:hover {
+        background-color: #e2868c;
+    }
+
+    .slick-prev {
+        left: -19px;
+        z-index: 1;
+    }
+
+    .slick-next {
+        right: -19px;
+    }
+
+    .slick-prev:before {
+        font-family: fontawesome;
+        font-size: 22px;
+        position: absolute;
+        top: 17px;
+        left: 24px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+
+    .slick-next:before {
+        font-family: fontawesome;
+        font-size: 22px;
+        position: absolute;
+        top: 17px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+
+    }
+
+    .slick-prev:before {
+        content: '\f104';
+    }
+
+    .slick-next:before {
+        content: '\f105';
+    }
+</style>
+
+<body>
+    <div id="wrapper">
+        <!-- =============================== WP-HEADER ============================== -->
+        <header id="wp-header">
+            <div class="top-bar">
+
+            </div>
+            <!-- end top-bar -->
+            <div class="container">
+                <div id="logo-bar" class="d-flex jc-between">
+                    <div class="follow-icon">
+                        <ul id="list-socials" class="d-flex">
+                            <li>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="">
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-pinterest-square"></i></a>
+                            </li>
+                        </ul>
+                        <!-- end list-socials -->
+                    </div>
+                    <!-- end follow-icon -->
+                    <div class="logo">
+                        <a href="">
+                            <img src="assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- end logo -->
+                    <form id="search">
+                        <input type="text" class="search-txt" placeholder="Tìm kiếm sản phẩm">
+                        <button class="icon-search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <!-- end form search -->
+                </div>
+                <!-- end logo-bar -->
+            </div>
+            <!-- -------------------------------- MAIN-MENU and form LOGIN------------------------------------ -->
+            <div class="container">
+                <nav class="d-flex jc-between">
+                    <ul id="main-menu" class="d-flex">
+                        <li><a href="index.html">Trang chủ</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Áo</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Quần</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Giày dép</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Phụ kiện</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">Giới thiệu</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Áo</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Quần</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Giày dép</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Phụ kiện</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="category-product-02.html">Sản phẩm</a>
+                            <ul class="sub-menu">
+                                <li><a href="category-product-02.html">Áo</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="detail-product-03.html">Kaki</a></li>
+                                        <li><a href="detail-product-03.html">Jean</a></li>
+                                        <li><a href="detail-product-03.html">Len</a></li>
+                                        <li><a href="detail-product-03.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-product-02.html">Quần</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="detail-product-03.html">Kaki</a></li>
+                                        <li><a href="detail-product-03.html">Jean</a></li>
+                                        <li><a href="detail-product-03.html">Len</a></li>
+                                        <li><a href="detail-product-03.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-product-02.html">Giày dép</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="detail-product-03.html">Kaki</a></li>
+                                        <li><a href="detail-product-03.html">Jean</a></li>
+                                        <li><a href="detail-product-03.html">Len</a></li>
+                                        <li><a href="detail-product-03.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-product-02.html">Phụ kiện</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="detail-product-03.html">Kaki</a></li>
+                                        <li><a href="detail-product-03.html">Jean</a></li>
+                                        <li><a href="detail-product-03.html">Len</a></li>
+                                        <li><a href="detail-product-03.html">Short</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="category-news-04.html">Trang trí nhà</a>
+                            <ul class="sub-menu">
+                                <li><a href="category-news-04.html">Áo</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="category-news-04.html">Kaki</a></li>
+                                        <li><a href="category-news-04.html">Jean</a></li>
+                                        <li><a href="category-news-04.html">Len</a></li>
+                                        <li><a href="category-news-04.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-news-04.html">Quần</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="category-news-04.html">Kaki</a></li>
+                                                <li><a href="category-news-04.html">Jean</a></li>
+                                                <li><a href="category-news-04.html">Len</a></li>
+                                                <li><a href="category-news-04.html">Short</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="category-news-04.html">Jean</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="category-news-04.html">Kaki</a></li>
+                                                <li><a href="category-news-04.html">Jean</a></li>
+                                                <li><a href="category-news-04.html">Len</a></li>
+                                                <li><a href="category-news-04.html">Short</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="category-news-04.html">Len</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="category-news-04.html">Kaki</a></li>
+                                                <li><a href="category-news-04.html">Jean</a></li>
+                                                <li><a href="category-news-04.html">Len</a></li>
+                                                <li><a href="category-news-04.html">Short</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="category-news-04.html">Short</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="category-news-04.html">Kaki</a></li>
+                                                <li><a href="category-news-04.html">Jean</a></li>
+                                                <li><a href="category-news-04.html">Len</a></li>
+                                                <li><a href="category-news-04.html">Short</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-news-04.html">Giày dép</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="category-news-04.html">Kaki</a></li>
+                                        <li><a href="category-news-04.html">Jean</a></li>
+                                        <li><a href="category-news-04.html">Len</a></li>
+                                        <li><a href="category-news-04.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-news-04.html">Phụ kiện</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="category-news-04.html">Kaki</a></li>
+                                        <li><a href="category-news-04.html">Jean</a></li>
+                                        <li><a href="category-news-04.html">Len</a></li>
+                                        <li><a href="category-news-04.html">Short</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">Xu hướng</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Áo</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Quần</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Giày dép</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Phụ kiện</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">Sitemap</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Áo</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Quần</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Giày dép</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Phụ kiện</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">Liên hệ</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Áo</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Quần</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Giày dép</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Phụ kiện</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- end main-menu -->
+                    <div class="account">
+                        <a href="" class="login">Đăng nhập</a>
+                        <a href="" class="regis">Đăng ký</a>
+                    </div>
+                    <!-- end account -->
+                </nav>
+            </div>
+        </header>
+        <!-- end wp-header -->
+         <!-- ======================================================== EVENT PAGE ========================================================= -->
+         <div id="product-page">
+            <div class="container">
+                <a href="home.html" class="icon-home"><i class="fas fa-home"></i></a>
+                <a href="home.html" class="home">Trang chủ</a>
+                <span class="icon-link-page"><i class="fas fa-angle-right"></i></span>
+                <a href="category-product-02.html" class="product">Xu hướng</a>
+            </div>
+        </div>
+        <!-- End event page -->
+        <!-- =============================== WP-CONTENT ============================== -->
+
+        <section id="wp-content">
+
+            <div class="container">
+                <div class="box-video text-center">
+                    <div class="box-head">
+                        <h1 style="font-size: 32px;">VIDEO ĐỒ DECOR TẠI GreenHOLO</h1>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BrUz0sTypBQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nbz30_aI5Go"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/E_D7AEHy5kM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </section>
+        <!-- end wp-content -->
+        <!-- ===================================================================== WP-SIGN-IN-PROMOTION ======================================================================= -->
+        <div id="wp-sign-in-promotion">
+            <div class="container">
+                <h3>Đăng ký để nhận khuyến mãi</h3>
+                <p>Đăng ký để nhận được thông tin khuyến mãi mới nhất</p>
+                <form action="" id="sign-in-email">
+                    <input type="text" placeholder="Nhập email của bạn">
+                    <button class="sign-in">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+        <!-- End sign-in-email-promotion -->
+
+        <!-- ===================================================================== WP-FOOTER ======================================================================= -->
+        <div id="wp-footer">
+            <div class="container d-flex">
+
+                <!-- about-us -->
+                <div class="widget about-us">
+                    <div class="widget-head">
+                        <h3>
+                            <a href="home.html" id="logo">
+                                <img src="assets/images/logo-2.png" alt="">
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="widget-body">
+                        <p class="post-desc">Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ
+                            nghĩa dễ
+                            gây rối trí và cản trở việc tập trung vào yếu tố trình bày văn bản. Lorem Ipsum có ưu
+                            điểm
+                            hơn so với đoạn văn bản chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung" là nó khiến
+                            văn
+                            bản giống thật hơn, bình thường hơn.</p>
+                    </div>
+                </div>
+                <!-- end about-us -->
+
+                <div class="widget category">
+                    <div class="widget-head">
+                        <h3>Danh mục</h3>
+                    </div>
+                    <div class="widget-body">
+                        <ul class="list-category">
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end category -->
+
+                <!-- featured-news -->
+                <div class="widget featured-news">
+                    <div class="widget-head">
+                        <h3>Bán chạy</h3>
+                    </div>
+                    <div class="widget-body">
+                        <ul class="list-featured-news">
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end featured-news -->
+
+                <!-- fanpage -->
+                <div class="widget fanpage">
+                    <div class="widget-body">
+                        <div class="fb-page" data-href="https://www.facebook.com/cuongunitop" data-tabs=""
+                            data-width="300px" data-height="" data-small-header="false"
+                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/cuongunitop" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/cuongunitop">Phan Văn Cương - Chuyên gia Truyền
+                                    nghề
+                                    lậP trình web</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!-- end fanpage -->
+
+            </div>
+        </div>
+        <!-- End wp-footer -->
+
+        <!-- ===================================================================== WP-COPYRIGHT ======================================================================= -->
+        <div id="wp-copyright">
+            <p class="copyright">© 2017 All right reserved - Bản quyền thuộc về VIETSOZ.com</p>
+        </div>
+        <!-- End wp-copyright -->
+
+    </div>
+    <!-- end wrapper -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+        integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ===================================================================== SLICK-SLIDER ======================================================================= -->
+    <script>
+        $('.filtering').slick({
+            slidesToShow: 4,
+            slidesToScroll: 4
+        });
+
+        var filtered = false;
+
+        $('.js-filter').on('click', function () {
+            if (filtered === false) {
+                $('.filtering').slick('slickFilter', ':even');
+                $(this).text('Unfilter Slides');
+                filtered = true;
+            } else {
+                $('.filtering').slick('slickUnfilter');
+                $(this).text('Filter Slides');
+                filtered = false;
+            }
+        });
+    </script>
+</body>
+
+</html>

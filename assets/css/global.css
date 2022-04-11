@@ -1,0 +1,16 @@
+.d-flex{
+    display: flex;
+}
+.jc-between{
+    justify-content: space-between;
+}
+.text-justify{
+    text-align: justify;
+}
+.text-center{
+    text-align: center;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }

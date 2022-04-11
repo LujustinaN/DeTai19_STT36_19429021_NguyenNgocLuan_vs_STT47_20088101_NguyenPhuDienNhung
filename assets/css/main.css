@@ -1,0 +1,898 @@
+/* Từ tổng quan đến chi tiết
+Từ ngoài vào trong
+Từ sau ra trước
+Từ trái sang phải
+Từ trên xuống dưới */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* =========================================================== OVERVIEW =========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ============================================================================================= WP-HEADER ================================================================================================== */
+
+
+/* ============================================================= TOP-BAR ================================================================= */
+
+.top-bar {
+    padding: 20px 0px;
+    background-color: #70caae;
+}
+
+
+/* ============================================================= LOGO-BAR ================================================================= */
+
+#logo-bar {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* ------------------- list-socials ------------------- */
+
+ul#list-socials {
+    padding-top: 40px;
+}
+
+ul#list-socials li {
+    padding-right: 10px;
+}
+
+ul#list-socials li a {
+    color: #0a0a0a;
+    font-size: 40px;
+    display: block;
+    padding: 6px 12px;
+}
+
+ul#list-socials li:last-child {
+    padding-right: 0;
+}
+
+ul#list-socials li:hover a {
+    color: #489158;
+}
+
+
+/* --------------------------- search-box -------------------------- */
+
+form#search {
+    position: relative;
+    display: flex;
+    padding: 10px 0px;
+    margin-top: 20px;
+}
+
+.search-txt {
+    position: absolute;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    transition: 0.6s;
+    line-height: 40px;
+    width: 0px;
+    bottom: 10px;
+    right: 50px;
+}
+
+form#search:hover .search-txt {
+    height: 40px;
+    border-bottom: 1px solid rgb(27, 17, 17);
+    color: black;
+    width: 200px;
+    bottom: 10px;
+    right: 50px;
+}
+
+form#search .icon-search {
+    outline: none;
+    border: none;
+    background: none;
+    padding: 12px 28px 12px 22px;
+}
+
+
+/* ============================================================= MAIN-MENU AND LOGIN ================================================================= */
+
+
+/* --------------------------- main-menu -------------------------- */
+
+ul#main-menu {
+    flex: 800px;
+}
+
+ul#main-menu li {
+    position: relative;
+}
+
+ul#main-menu li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 8px 15px;
+    display: block;
+    transition: all 0.2s;
+}
+
+ul#main-menu>li:hover>a {
+    font-weight: 500;
+    transition: all 0.2s;
+    background: #128a4e;
+    color: #fefefe;
+}
+
+ul#main-menu .sub-menu {
+    z-index: 1;
+    position: absolute;
+    background-color: #d8d7d2;
+    width: 200px;
+    padding: 10px 0px;
+    list-style: none;
+    border-top: 2px solid rgb(61, 60, 60);
+    border-bottom: 2px solid rgb(61, 60, 60);
+    display: none;
+}
+
+ul#main-menu li:hover>ul.sub-menu {
+    display: block;
+}
+
+ul#main-menu .sub-menu a {
+    display: block;
+    padding: 5px 30px 5px 20px;
+    border-bottom: 1px solid rgb(163, 159, 159);
+}
+
+ul#main-menu .sub-menu>li:hover>a {
+    border-bottom: 1px solid rgb(61, 60, 60);
+    color: #4b4e57;
+}
+
+ul#main-menu li .sub-menu li:last-child a {
+    border: none;
+}
+
+ul#main-menu .sub-menu .sub-menu {
+    left: 200px;
+    top: -12px;
+}
+
+
+/* --------------------------- đăng nhập và đăng ký -------------------------- */
+
+.account::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+    font-size: 20px;
+}
+
+.account a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    font-size: 20px;
+    display: inline-block;
+    padding: 0px 5px;
+    margin-left: 10px;
+    background-color: #f1f2f6;
+    border-radius: 5px;
+}
+
+.account a:hover {
+    background-color: #4b806f;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(59, 88, 59);
+}
+
+
+/* ============================================================================================= WP-CONTENT ================================================================================================== */
+
+section {
+    margin-top: 30px;
+}
+
+#sidebar {
+    flex: 30%;
+}
+
+#sidebar .box-head h3 {
+    padding: 5px 10px;
+    background-color: #0c7a57;
+    color: #fefefe;
+    font-size: 20px;
+}
+
+#content {
+    flex: 70%;
+    padding-left: 15px;
+}
+
+
+/* --------------------------- menu-left -------------------------- */
+
+ul#menu-left li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    padding: 8px 15px 8px 10px;
+    display: block;
+    transition: all 0.2s;
+}
+
+
+/* Thiết lập border bên dưới  */
+
+#menu-left>li>a {
+    position: relative;
+}
+
+ul#menu-left>li>a::before {
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: #128a4e;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#menu-left>li:hover>a::before {
+    width: 100%;
+}
+
+
+/* =============================================================== SLIDER-SHOW =================================================================== */
+
+#slider-show {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 920px;
+    height: 460px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.navigation-manual {
+    position: relative;
+    width: 960px;
+    margin-top: -90px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #161514;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #ffffff;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+
+/* css for automatic navigation */
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 960px;
+    justify-content: center;
+    margin-top: 410px;
+}
+
+.navigation-auto div {
+    border: 2px solid #161514;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: #ffffff;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: #ffffff;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: #ffffff;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: #ffffff;
+}
+
+
+/* =============================================================== CUSTOMER-BENEFIT =================================================================== */
+
+#customer-benefit {
+    margin-top: 50px;
+}
+
+#customer-benefit .list-customer-benefit {
+    justify-content: space-between;
+}
+
+#customer-benefit .list-customer-benefit li {
+    display: flex;
+}
+
+#customer-benefit .list-customer-benefit li a {
+    display: block;
+    padding: 20px 50px 20px 60px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#customer-benefit .list-customer-benefit button {
+    display: block;
+    outline: none;
+    border: none;
+    padding: 15px 21px;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+#customer-benefit .list-customer-benefit .free-ship,
+.icon-ship,
+.membership-card,
+.icon-gift,
+.discount,
+.icon-discount {
+    background-color: #10ac84;
+}
+
+#customer-benefit .list-customer-benefit li.free-ship:hover {
+    background-color: #b4666c;
+}
+
+#customer-benefit .list-customer-benefit li.membership-card:hover {
+    background-color: #ac9981;
+}
+
+#customer-benefit .list-customer-benefit li.discount:hover {
+    background-color: #0abde3;
+}
+
+
+/* ============================================================= PRODUCT-THEME ================================================================= */
+
+.box .box-head a {
+    color: #000000;
+    font-size: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+    display: block;
+    text-decoration: none;
+}
+
+.box.product-theme {
+    margin-top: 90px;
+}
+
+.box.product-theme ul.list-product-theme {
+    position: relative;
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list-product-theme .product-info {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.list-product-theme li {
+    flex-basis: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.list-product-theme li img {
+    max-width: 100%;
+    height: auto;
+}
+
+.list-product-theme li:hover .product-item {
+    border: 1px solid rgb(112, 112, 111);
+}
+
+.list-product-theme li:hover img {
+    transform: scale(1.05);
+}
+
+.list-product-theme li .product-thumb img {
+    transition: all 0.25s;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.list-product-theme li .product-thumb {
+    overflow: hidden;
+}
+
+.list-product-theme li .product-item {
+    border: 1px solid #c9c9c9;
+}
+
+.list-product-theme li a {
+    display: block;
+    text-decoration: none;
+}
+
+.list-product-theme li a.product-name {
+    font-size: 16px;
+    color: #212121;
+    padding: 3px 0px;
+}
+
+.list-product-theme li .product-price {
+    color: #128a4e;
+    padding: 2px 0px;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    padding: 8px;
+}
+
+.list-product-theme li del {
+    color: #8d8d8d;
+    font-size: 16px;
+}
+
+.list-product-theme li .add-cart {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.list-product-theme li .add-cart a {
+    color: #444444;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 15px;
+    border: none;
+    padding: 11px 42px;
+    background-color: #eeeeee;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.list-product-theme li .add-cart:hover a {
+    background-color: #b2f1ff;
+}
+
+
+/* ============================================================= BOX-DESCRIPTION ================================================================= */
+
+.box-description {
+    border: 2px solid rgb(197, 197, 197);
+    border-radius: 20px 0px 20px 0px;
+}
+
+.box-description .box-head,
+.box-body {
+    padding: 20px;
+}
+
+.box-description .box-head h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #333333;
+}
+
+.box-description .box-body p {
+    text-align: center;
+}
+
+
+/* ================================================================ HOT-PRODUCT ================================================================= */
+
+.box.hot-products {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+ul.list-hot-products {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list-hot-products .product-info {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.list-hot-products li {
+    flex-basis: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.list-hot-products li a {
+    display: block;
+    text-decoration: none;
+}
+
+.list-hot-products li img {
+    max-width: 100%;
+    height: auto;
+}
+
+.list-hot-products li:hover img {
+    transform: scale(1.05);
+}
+
+.list-hot-products li .product-thumb {
+    overflow: hidden;
+}
+
+.list-hot-products li .product-thumb img {
+    transition: all 0.25s;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.list-hot-products li .product-name {
+    font-size: 16px;
+    color: #212121;
+    padding: 3px 0px;
+}
+
+.list-hot-products li .product-price {
+    color: #128a4e;
+    padding: 2px 0px;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    padding: 8px;
+}
+
+.list-hot-products li del {
+    color: #8d8d8d;
+    font-size: 16px;
+}
+
+.list-hot-products li .add-cart {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.list-hot-products li .add-cart a {
+    color: #444444;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 15px;
+    border: none;
+    padding: 11px 42px;
+    background-color: #eeeeee;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.list-hot-products li .add-cart:hover a {
+    background-color: #b2f1ff;
+}
+
+.box.hot-products .see-all {
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    color: #272727;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* ============================================================= TREND ================================================================= */
+
+.box.trends {
+    margin-bottom: 68px;
+}
+
+.box.trends .post-thumb {
+    display: block;
+    overflow: hidden;
+}
+
+.box.trends .item:hover img {
+    transform: scale(1.05);
+    transition: all 0.25s;
+}
+
+.box.trends .item img {
+    max-width: 368px;
+    height: 265px;
+}
+
+.box.trends .item .post-title {
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+    display: block;
+    padding: 14px 0px;
+}
+
+.box.trends .item .post-excerpt {
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+/* =============================================================== WP-SIGN-IN-PROMOTION =================================================================== */
+
+#wp-sign-in-promotion {
+    background-image: url("../images/bg-1.jpg");
+    background-position-y: center;
+    background-size: cover;
+    padding-top: 76px;
+    padding-bottom: 124px;
+}
+
+#wp-sign-in-promotion h3 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#wp-sign-in-promotion p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    padding: 16px 0px 56px 0px;
+}
+
+#wp-sign-in-promotion #sign-in-email {
+    position: relative;
+    text-align: center;
+}
+
+#wp-sign-in-promotion input {
+    width: 900px;
+    padding: 18px 165px 18px 64px;
+    background: none;
+    color: #ffffff;
+    font-size: 18px;
+    border: 2px solid #ffffff;
+    outline: none;
+}
+
+#wp-sign-in-promotion input::placeholder {
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: none;
+}
+
+#wp-sign-in-promotion .sign-in {
+    position: absolute;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 16px 38px 15px 45px;
+    background-color: #35aec0;
+    right: 137px;
+    bottom: 2px;
+    outline: none;
+    border: none;
+}
+
+#wp-sign-in-promotion .sign-in:hover {
+    background-color: #79c8d4;
+}
+
+
+/* =============================================================== WP-FOOTER =================================================================== */
+
+#wp-footer {
+    background: #1b1b1b;
+    color: #ffffff;
+    padding: 72px 0px;
+}
+
+#wp-footer a {
+    color: #ffffff;
+    display: block;
+}
+
+#wp-footer .widget .widget-head h3 {
+    padding-left: 0;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+
+/* ------------------- about us ------------------- */
+
+.widget.about-us {
+    flex: 405px;
+    padding-right: 45px;
+}
+
+.widget.about-us .post-desc {
+    font-size: 16px;
+    padding-bottom: 10px;
+    text-align: justify;
+    font-weight: 300;
+}
+
+
+/* ------------------- category ------------------- */
+
+.widget.category {
+    flex: 210px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.widget.category h3 {
+    padding-top: 16px;
+}
+
+.widget.category .list-category li {
+    position: relative;
+}
+
+.widget.category .list-category li a {
+    padding: 9px 0px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.widget li a {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.widget li .cate {
+    padding-right: 14px;
+    font-size: 22px;
+    position: absolute;
+    left: 0px;
+    top: 4px;
+}
+
+
+/* ------------------- featured-news ------------------- */
+
+.widget.featured-news {
+    flex: 263px;
+    padding-right: 15px;
+    padding-left: 45px;
+}
+
+.widget.featured-news h3 {
+    padding-top: 16px;
+}
+
+.widget.featured-news .list-featured-news li {
+    position: relative;
+}
+
+.widget.featured-news .list-featured-news li a {
+    padding: 9px 0px;
+    padding-left: 20px;
+}
+
+
+/* ------------------- fanpage ------------------- */
+
+.widget.fanpage {
+    flex: 307px;
+    padding-left: 15px;
+}
+
+
+/* =========================================================== WP-COPYRIGHT =========================================================== */
+
+#wp-copyright {
+    padding: 13px 0px;
+}
+
+.copyright {
+    font-size: 16px;
+    color: #454545;
+    text-align: center;
+    margin: 0;
+}

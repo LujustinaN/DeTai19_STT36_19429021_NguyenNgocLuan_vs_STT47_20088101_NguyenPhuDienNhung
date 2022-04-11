@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+    <!-- Slider -->
+    <link rel="stylesheet" href="assets/plugins/slider/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/owlcarousel/assets/owl.theme.default.css">
+    <script src="assets/plugins/slider/jquery.min.js"></script>
+    <script src="assets/plugins/slider/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Slider-show and slick-slider-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>GreenHOLO.com</title>
+</head>
+
+<!-- Script for slider -->
+<script>
+    $(document).ready(function() {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 33,
+            nav: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    });
+</script>
+<!-- Style for slider -->
+<style>
+    .slick-arrow {
+        position: absolute;
+        padding: 28px;
+        background-color: #e2868c;
+        border-radius: 40px;
+        top: 250px;
+    }
+    
+    .slick-arrow:hover {
+        background-color: #e2868c;
+    }
+    
+    .slick-prev {
+        left: -19px;
+        z-index: 1;
+    }
+    
+    .slick-next {
+        right: -19px;
+    }
+    
+    .slick-prev:before {
+        font-family: fontawesome;
+        font-size: 22px;
+        position: absolute;
+        top: 17px;
+        left: 24px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+    
+    .slick-next:before {
+        font-family: fontawesome;
+        font-size: 22px;
+        position: absolute;
+        top: 17px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+    
+    .slick-prev:before {
+        content: '\f104';
+    }
+    
+    .slick-next:before {
+        content: '\f105';
+    }
+</style>
+
+<body>
+    <div id="wrapper">
+        <!-- ==================================================================================== WP-HEADER ====================================================================================== -->
+        <header id="wp-header">
+            <!-- ===================================== TOP-BAR =================================== -->
+            <div class="top-bar"></div>
+            <!-- end top-bar -->
+
+            <!-- ===================================== LOGO-BAR =================================== -->
+            <div class="container">
+                <div id="logo-bar" class="d-flex jc-between">
+                    <div class="follow-icon">
+                        <ul id="list-socials" class="d-flex">
+                            <li>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="">
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-pinterest-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end follow-icon -->
+
+                    <div class="logo">
+                        <a href="">
+                            <img src="assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- end logo -->
+
+                    <form id="search">
+                        <input type="text" class="search-txt" placeholder="Tìm kiếm sản phẩm">
+                        <button class="icon-search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <!-- end form search -->
+
+                </div>
+                <!-- end logo-bar -->
+
+            </div>
+
+            <!-- ============================= MAIN-MENU AND FORM LOGIN =========================== -->
+            <div class="container">
+                <nav class="d-flex jc-between">
+                    <ul id="main-menu" class="d-flex">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="category-product-02.html">Sản phẩm</a>
+                            <ul class="sub-menu">
+                                <li><a href="category-product-02.html">Áo</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="detail-product-03.html">Kaki</a></li>
+                                        <li><a href="detail-product-03.html">Jean</a></li>
+                                        <li><a href="detail-product-03.html">Len</a></li>
+                                        <li><a href="detail-product-03.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-product-02.html">Quần</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="detail-product-03.html">Kaki</a></li>
+                                        <li><a href="detail-product-03.html">Jean</a></li>
+                                        <li><a href="detail-product-03.html">Len</a></li>
+                                        <li><a href="detail-product-03.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-product-02.html">Giày dép</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="detail-product-03.html">Kaki</a></li>
+                                        <li><a href="detail-product-03.html">Jean</a></li>
+                                        <li><a href="detail-product-03.html">Len</a></li>
+                                        <li><a href="detail-product-03.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-product-02.html">Phụ kiện</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="detail-product-03.html">Kaki</a></li>
+                                        <li><a href="detail-product-03.html">Jean</a></li>
+                                        <li><a href="detail-product-03.html">Len</a></li>
+                                        <li><a href="detail-product-03.html">Short</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="category-news-04.html">Trang trí nhà</a>
+                            <ul class="sub-menu">
+                                <li><a href="category-news-04.html">Phòng khách</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="category-news-04.html">Kaki</a></li>
+                                        <li><a href="category-news-04.html">Jean</a></li>
+                                        <li><a href="category-news-04.html">Len</a></li>
+                                        <li><a href="category-news-04.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-news-04.html">Phòng tắm</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="category-news-04.html">Kaki</a></li>
+                                                <li><a href="category-news-04.html">Jean</a></li>
+                                                <li><a href="category-news-04.html">Len</a></li>
+                                                <li><a href="category-news-04.html">Short</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="category-news-04.html">Jean</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="category-news-04.html">Kaki</a></li>
+                                                <li><a href="category-news-04.html">Jean</a></li>
+                                                <li><a href="category-news-04.html">Len</a></li>
+                                                <li><a href="category-news-04.html">Short</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="category-news-04.html">Len</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="category-news-04.html">Kaki</a></li>
+                                                <li><a href="category-news-04.html">Jean</a></li>
+                                                <li><a href="category-news-04.html">Len</a></li>
+                                                <li><a href="category-news-04.html">Short</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="category-news-04.html">Short</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="category-news-04.html">Kaki</a></li>
+                                                <li><a href="category-news-04.html">Jean</a></li>
+                                                <li><a href="category-news-04.html">Len</a></li>
+                                                <li><a href="category-news-04.html">Short</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-news-04.html">Nhà bếp</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="category-news-04.html">Kaki</a></li>
+                                        <li><a href="category-news-04.html">Jean</a></li>
+                                        <li><a href="category-news-04.html">Len</a></li>
+                                        <li><a href="category-news-04.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-news-04.html">Phòng đọc sách</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="category-news-04.html">Kaki</a></li>
+                                        <li><a href="category-news-04.html">Jean</a></li>
+                                        <li><a href="category-news-04.html">Len</a></li>
+                                        <li><a href="category-news-04.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-news-04.html">Phòng ngủ</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="category-news-04.html">Kaki</a></li>
+                                        <li><a href="category-news-04.html">Jean</a></li>
+                                        <li><a href="category-news-04.html">Len</a></li>
+                                        <li><a href="category-news-04.html">Short</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">Xu hướng</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Áo</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Quần</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Giày dép</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Phụ kiện</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">Sitemap</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                    </ul>
+                    <!-- end main-menu -->
+
+                    <div class="account">
+                        <a href="" class="login">Đăng nhập</a>
+                        <a href="" class="regis">Đăng ký</a>
+                    </div>
+                    <!-- end account -->
+                </nav>
+            </div>
+        </header>
+        <!-- end wp-header -->
+
+        <!-- ==================================================================================== WP-CONTENT====================================================================================== -->
+        <section id="wp-content">
+            <div class="container d-flex">
+                <!-- ===================================== MENU-LEFT (SIDEBAR) =================================== -->
+                <div id="sidebar">
+                    <div class="box">
+                        <div class="box-head">
+                            <h3>Danh mục sản phẩm</h3>
+                        </div>
+                        <div class="box-body">
+                            <ul id="menu-left">
+                                <li><a href="">Đang khuyến mãi</a></li>
+                                <li><a href="">Theo chủ đề</a></li>
+                                <li><a href="">Bình hoa & hoa</a></li>
+                                <li><a href="">Trang trí kệ</a></li>
+                                <li><a href="">Đồng hồ treo tường</a></li>
+                                <li><a href="">Đồ trang trí bàn làm việc</a></li>
+                                <li><a href="">Thảm trang trí</a></li>
+                                <li><a href="">Vỏ gối sofa</a></li>
+                                <li><a href="">Tranh dán tường (Decal)</a></li>
+                                <li><a href="">Gương trang trí</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end sidebar -->
+
+                <!-- ======================================= SLIDER SHOW ======================================= -->
+                <div id="content">
+                    <div id="slider-show">
+                        <!-- image slider start -->
+                        <div class="slider">
+                            <div class="slides">
+                                <!-- radio buttons start -->
+                                <input type="radio" name="radio-btn" id="radio1">
+                                <input type="radio" name="radio-btn" id="radio2">
+                                <input type="radio" name="radio-btn" id="radio3">
+                                <input type="radio" name="radio-btn" id="radio4">
+                                <!-- radio buttons end -->
+
+                                <!-- slide images start -->
+                                <div class="slide first">
+                                    <img src="assets/images/slider/slider-1.png" alt="">
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/images/slider/slider-2.png" alt="">
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/images/slider/slider-3.png" alt="">
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/images/slider/slider-4.png" alt="">
+                                </div>
+                                <!-- slide images end -->
+
+                                <!-- automatic navigation start -->
+                                <div class="navigation-auto">
+                                    <div class="auto-btn1"></div>
+                                    <div class="auto-btn2"></div>
+                                    <div class="auto-btn3"></div>
+                                    <div class="auto-btn4"></div>
+                                </div>
+                                <!-- automatic navigation end -->
+
+                            </div>
+                            <!-- end slides -->
+
+                            <!-- manual navigation start -->
+                            <div class="navigation-manual">
+                                <label for="radio1" class="manual-btn"></label>
+                                <label for="radio2" class="manual-btn"></label>
+                                <label for="radio3" class="manual-btn"></label>
+                                <label for="radio4" class="manual-btn"></label>
+                            </div>
+                            <!-- manual navigation end -->
+
+                        </div>
+                        <!-- image slider end -->
+
+                        <script type="text/javascript">
+                            var counter = 1;
+                            setInterval(function() {
+                                document.getElementById('radio' + counter).checked = true;
+                                counter++;
+                                if (counter > 4) {
+                                    counter = 1;
+                                }
+                            }, 5000);
+                        </script>
+                    </div>
+                    <!-- End slider-show -->
+                </div>
+                <!-- end content -->
+            </div>
+
+            <!-- ===================================== CUSTOMER-BENIFIT =================================== -->
+            <div id="customer-benefit" class="container">
+                <ul class="list-customer-benefit d-flex">
+                    <li class="free-ship">
+                        <a href="">Thanh toán dễ dàng</a>
+                        <button class="icon-ship"><i class="fas fa-shopping-cart"></i></button>
+                    </li>
+                    <li class="membership-card">
+                        <a href="">Tiết kiệm thời gian</a>
+                        <button class="icon-gift"><i class="fa-solid fa-clock"></i></button>
+                    </li>
+                    <li class="discount">
+                        <a href="">Đa dạng sản phẩm</a>
+                        <button class="icon-discount"><i class="fa-solid fa-couch"></i></button>
+                    </li>
+                </ul>
+            </div>
+            <!-- End customer-benefit -->
+            <!-- ===================================== PRODUCT-THEME (ĐỒNG HỒ TREO TƯỜNG)=================================== -->
+            <div class="container">
+                <div class="box product-theme">
+                    <div class="box-head">
+                        <a href=""> Đồng hồ treo tường </a>
+                    </div>
+                    <div class="box-body">
+                        <ul class="list-product-theme filtering">
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/clock/pic-1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Đồng hồ dán tường mica</a>
+                                        <div class="product-price">765.000đ</div>
+                                        <del>900.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/clock/pic-2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Đồng hồ đầu hưu hoa tài
+                                            lộc</a>
+                                        <div class="product-price">545.000đ</div>
+                                        <del>720.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/clock/pic-3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Đồng hồ Vintage 58cm mã
+                                            03</a>
+                                        <div class="product-price">595,000 VNĐ</div>
+                                        <del></del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/clock/pic-4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Đồng hồ dán tường mica</a>
+                                        <div class="product-price">325,000 VNĐ</div>
+                                        <del></del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/clock/pic-5.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Đồng hồ hiện đại viền bạc
+                                            01</a>
+                                        <div class="product-price">315,000 VNĐ</div>
+                                        <del></del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/clock/pic-6.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Đồng hồ treo tường cao
+                                            cấp</a>
+                                        <div class="product-price">1,550,000 VNĐ</div>
+                                        <del>1,750,000</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/clock/pic-7.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Mica Đồng hồ số đơn
+                                            giản</a>
+                                        <div class="product-price">165,000 VNĐ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/clock/pic-8.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Mica đồng hồ số cách
+                                            điệu</a>
+                                        <div class="product-price">325.000đ</div>
+                                        <del>500.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/clock/pic-9.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Mica Đồng hồ số đơn
+                                            giản</a>
+                                        <div class="product-price">555.000đ</div>
+                                        <del>800.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/clock/pic-10.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Đồng hồ đầu hươu</a>
+                                        <div class="product-price">255.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/clock/pic-11.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-news-05.psd" class="product-name">Đồng hồ đầu hươu hoa tài
+                                            lộc</a>
+                                        <div class="product-price">255.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/clock/pic-12.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-news-05.psd" class="product-name">Đồng hồ đầu hươu</a>
+                                        <div class="product-price">255.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end product-theme -->
+            <!-- ========================================= MÔ TẢ TIÊU CHÍ ================================================== -->
+            <div class="container">
+                <div class="box-description">
+                    <div class="box-head">
+                        <h1>Đồ Decor Trang Trí Nhà Hiện Đại & Sang Trọng</h1>
+                    </div>
+                    <div class="box-body">
+                        <p>GreenHOLO hoạt động với tiêu chí mong muốn tất cả các khách hàng của mình đều có thể tự tay mua đồ decor và trang trí lại tổ ấm ngôi nhà mình mà không mất quá nhiều chi phí. Giúp cho ngôi nhà của quý khách trở nên khang trang và
+                            lung linh nhất. Là nơi mỗi khi đi làm về chúng ta có thể tận hưởng không gian sống và cảm thấy thoải mái. Là nơi mỗi khi tụ tập bạn bè hay đón tiếp những vị khách quý tới bạn có thể cảm thấy tự hào.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end box-desciption -->
+            <!-- ========================================= HOT-PRODUCTS ================================================== -->
+            <div class="container">
+                <div class="box hot-products">
+                    <div class="box-head">
+                        <a href=""> Sản phẩm nổi bật </a>
+                    </div>
+                    <div class="box-body">
+                        <ul class="list-hot-products">
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/hot/pic-1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Đèn bão biển vintage trang
+                                            trí màu xanh</a>
+                                        <div class="product-price">555.000đ</div>
+                                        <del></del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/hot/pic-2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="" class="product-name">Người trắng hát ca sĩ trắng</a>
+                                        <div class="product-price">265.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/hot/pic-3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Hộp đựng bút mô hình giả
+                                            sách</a>
+                                        <div class="product-price">259.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/hot/pic-4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Hoa sắt chậu vintage</a>
+                                        <div class="product-price">85.000đ</div>
+                                        <del></del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/hot/pic-5.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Hương cao cổ xanh ngọc gốm
+                                            sứ</a>
+                                        <div class="product-price">119.000đ</div>
+                                        <del>200.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/hot/pic-6.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Bảng gỗ thủy tinh treo
+                                            tường</a>
+                                        <div class="product-price">169.000đ</div>
+                                        <del>400.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/hot/pic-7.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Gương dán tường trang trí
+                                        </a>
+                                        <div class="product-price">25.000đ</div>
+                                        <del></del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/hot/pic-8.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Hoa handmade đẹp cúc bi
+                                            </a>
+                                        <div class="product-price">22.000đ</div>
+                                        <del></del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/hot/pic-9.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Decal Coffee milk hạt
+                                            café</a>
+                                        <div class="product-price">85.000đ</div>
+                                        <del></del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/hot/pic-10.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Chậu cây xanh trùm chùm</a>
+                                        <div class="product-price">85.000đ</div>
+                                        <del></del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/hot/pic-11.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Lá trầu</a>
+                                        <div class="product-price">24.000đ</div>
+                                        <del></del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/hot/pic-12.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">Bông tuyết trang trí cây
+                                            thông</a>
+                                        <div class="product-price">8.000đ</div>
+                                        <del></del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="" class="see-all">Xem tất cả</a>
+                    </div>
+                </div>
+            </div>
+            <!-- end hot-products -->
+
+            <!-- ===================================== PRODUCT-THEME (TRANG TRÍ TƯỜNG)=================================== -->
+            <div class="container">
+                <div class="box product-theme">
+                    <div class="box-head">
+                        <a href=""> Trang trí tường </a>
+                    </div>
+                    <div class="box-body">
+                        <ul class="list-product-theme filtering">
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/wall/pic-1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">T-Shirt For Girl</a>
+                                        <div class="product-price">255.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/wall/pic-2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">T-Shirt For Girl</a>
+                                        <div class="product-price">255.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/wall/pic-3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">T-Shirt For Girl</a>
+                                        <div class="product-price">255.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/wall/pic-4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">T-Shirt For Girl</a>
+                                        <div class="product-price">255.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/wall/pic-5.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">T-Shirt For Girl</a>
+                                        <div class="product-price">255.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/wall/pic-6.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">T-Shirt For Girl</a>
+                                        <div class="product-price">255.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/wall/pic-7.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">T-Shirt For Girl</a>
+                                        <div class="product-price">255.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/wall/pic-8.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">T-Shirt For Girl</a>
+                                        <div class="product-price">255.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/wall/pic-9.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">T-Shirt For Girl</a>
+                                        <div class="product-price">255.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/wall/pic-10.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-product-03.html" class="product-name">T-Shirt For Girl</a>
+                                        <div class="product-price">255.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/wall/pic-11.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-news-05.psd" class="product-name">T-Shirt For Girl</a>
+                                        <div class="product-price">255.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-item">
+                                    <div class="product-top">
+                                        <a href="detail-product-03.html" class="product-thumb">
+                                            <img src="assets/images/wall/pic-12.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="detail-news-05.psd" class="product-name">T-Shirt For Girl</a>
+                                        <div class="product-price">255.000đ</div>
+                                        <del>300.000đ</del>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a href="">Thêm giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end product-theme -->
+
+            <!-- ================================================ TRENDS ================================================== -->
+            <div class="container">
+                <div class="box trends">
+                    <div class="box-head">
+                        <a href="category-news-04.html">Xu hướng</a>
+                    </div>
+                    <div class="box-body">
+                        <div class="owl-carousel owl-theme jc-between">
+                            <div class="item">
+                                <a href="category-news-04.html" class="post-thumb">
+                                    <img src="assets/images/pic-1.jpg" alt="">
+                                </a>
+                                <a href="category-news-04.html" class="post-title">Phong cách thời trang cơ bản mà bạn
+                                    nên biết?</a>
+                                <p class="post-excerpt">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500...</p>
+                            </div>
+                            <div class="item">
+                                <a href="category-news-04.html" class="post-thumb">
+                                    <img src="assets/images/pic-2.jpg" alt="">
+                                </a>
+                                <a href="category-news-04.html" class="post-title">Phong cách thời trang cơ bản mà bạn
+                                    nên biết?</a>
+                                <p class="post-excerpt">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500...</p>
+                            </div>
+                            <div class="item">
+                                <a href="category-news-04.html" class="post-thumb">
+                                    <img src="assets/images/pic-3.jpg" alt="">
+                                </a>
+                                <a href="category-news-04.html" class="post-title">Phong cách thời trang cơ bản mà bạn
+                                    nên biết?</a>
+                                <p class="post-excerpt">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500...</p>
+                            </div>
+                            <div class="item">
+                                <a href="category-news-04.html" class="post-thumb">
+                                    <img src="assets/images/pic-4.jpg" alt="">
+                                </a>
+                                <a href="category-news-04.html" class="post-title">Phong cách thời trang cơ bản mà bạn
+                                    nên biết?</a>
+                                <p class="post-excerpt">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500...</p>
+                            </div>
+                            <div class="item">
+                                <a href="category-news-04.html" class="post-thumb">
+                                    <img src="assets/images/pic-9.jpg" alt="">
+                                </a>
+                                <a href="category-news-04.html" class="post-title">Phong cách thời trang cơ bản mà bạn
+                                    nên biết?</a>
+                                <p class="post-excerpt">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500...</p>
+                            </div>
+                            <div class="item">
+                                <a href="category-news-04.html" class="post-thumb">
+                                    <img src="assets/images/pic-11.jpg" alt="">
+                                </a>
+                                <a href="category-news-04.html" class="post-title">Phong cách thời trang cơ bản mà bạn
+                                    nên biết?</a>
+                                <p class="post-excerpt">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500...</p>
+                            </div>
+                            <div class="item">
+                                <a href="category-news-04.html" class="post-thumb">
+                                    <img src="assets/images/pic-13.jpg" alt="">
+                                </a>
+                                <a href="category-news-04.html" class="post-title">Phong cách thời trang cơ bản mà bạn
+                                    nên biết?</a>
+                                <p class="post-excerpt">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500...</p>
+                            </div>
+                            <div class="item">
+                                <a href="category-news-04.html" class="post-thumb">
+                                    <img src="assets/images/pic-11.jpg" alt="">
+                                </a>
+                                <a href="category-news-04.html" class="post-title">Phong cách thời trang cơ bản mà bạn
+                                    nên biết?</a>
+                                <p class="post-excerpt">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500...</p>
+                            </div>
+                            <div class="item">
+                                <a href="category-news-04.html" class="post-thumb">
+                                    <img src="assets/images/pic-12.jpg" alt="">
+                                </a>
+                                <a href="category-news-04.html" class="post-title">Phong cách thời trang cơ bản mà bạn
+                                    nên biết?</a>
+                                <p class="post-excerpt">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end trends -->
+
+            <!-- ================================================ VIDEO GREENHOLO ================================================== -->
+            <div class="container">
+                <div class="box-video text-center">
+                    <div class="box-head">
+                        <h1 style="font-size: 32px;">VIDEO ĐỒ DECOR TẠI GreenHOLO</h1>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BrUz0sTypBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nbz30_aI5Go" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/E_D7AEHy5kM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- end wp-content -->
+        <!-- ===================================================================== WP-SIGN-IN-PROMOTION ======================================================================= -->
+        <div id="wp-sign-in-promotion">
+            <div class="container">
+                <h3>Đăng ký để nhận khuyến mãi</h3>
+                <p>Đăng ký để nhận được thông tin khuyến mãi mới nhất</p>
+                <form action="" id="sign-in-email">
+                    <input type="text" placeholder="Nhập email của bạn">
+                    <button class="sign-in">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+        <!-- End sign-in-email-promotion -->
+
+        <!-- ===================================================================== WP-FOOTER ======================================================================= -->
+        <div id="wp-footer">
+            <div class="container d-flex">
+
+                <!-- about-us -->
+                <div class="widget about-us">
+                    <div class="widget-head">
+                        <h3>
+                            <a href="home.html" id="logo">
+                                <img src="assets/images/logo-2.png" alt="">
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="widget-body">
+                        <p class="post-desc">Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với đoạn văn bản chỉ gồm nội dung kiểu "Nội dung, nội
+                            dung, nội dung" là nó khiến văn bản giống thật hơn, bình thường hơn.</p>
+                    </div>
+                </div>
+                <!-- end about-us -->
+
+                <div class="widget category">
+                    <div class="widget-head">
+                        <h3>Danh mục</h3>
+                    </div>
+                    <div class="widget-body">
+                        <ul class="list-category">
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end category -->
+
+                <!-- featured-news -->
+                <div class="widget featured-news">
+                    <div class="widget-head">
+                        <h3>Bán chạy</h3>
+                    </div>
+                    <div class="widget-body">
+                        <ul class="list-featured-news">
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Thời trang thu đông</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end featured-news -->
+
+                <!-- fanpage -->
+                <div class="widget fanpage">
+                    <div class="widget-body">
+                        <div class="fb-page" data-href="https://www.facebook.com/cuongunitop" data-tabs="" data-width="300px" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/cuongunitop" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/cuongunitop">Phan Văn Cương - Chuyên gia Truyền
+                                    nghề
+                                    lậP trình web</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!-- end fanpage -->
+
+            </div>
+        </div>
+        <!-- End wp-footer -->
+
+        <!-- ===================================================================== WP-COPYRIGHT ======================================================================= -->
+        <div id="wp-copyright">
+            <p class="copyright">© 2017 All right reserved - Bản quyền thuộc về VIETSOZ.com</p>
+        </div>
+        <!-- End wp-copyright -->
+    </div>
+    <!-- end wrapper -->
+    <!-- ============================================================================================================================================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ======================================================================= SLICK-SLIDER ========================================================================== -->
+    <script>
+        $('.filtering').slick({
+            slidesToShow: 4,
+            slidesToScroll: 4
+        });
+
+        var filtered = false;
+
+        $('.js-filter').on('click', function() {
+            if (filtered === false) {
+                $('.filtering').slick('slickFilter', ':even');
+                $(this).text('Unfilter Slides');
+                filtered = true;
+            } else {
+                $('.filtering').slick('slickUnfilter');
+                $(this).text('Filter Slides');
+                filtered = false;
+            }
+        });
+    </script>
+</body>
+
+</html>
