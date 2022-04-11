@@ -36,13 +36,102 @@
 		  $("#footer").load("./views/footer.html"); 
 		});
 	</script> 
+<!-- form css -->
+<style>
+	form {
+		margin: 0 auto;
 
+		width: 500px;
+	}
+	/* Add padding to containers */
+	.register-container {
+		padding: 16px;
+		background-color: white;
+		width: 500px;
+	}
+
+	/* Full-width input fields */
+	input[type=text],
+	input[type=password] {
+		width: 100%;
+		padding: 15px;
+		margin: 5px 0 22px 0;
+		display: inline-block;
+		border: none;
+		background: #f1f1f1;
+	}
+
+	input[type=text]:focus,
+	input[type=password]:focus {
+		background-color: #ddd;
+		outline: none;
+	}
+
+	/* Overwrite default styles of hr */
+	hr {
+		border: 1px solid #f1f1f1;
+		margin-bottom: 25px;
+	}
+
+	/* Set a style for the submit button */
+	.registerbtn {
+		background-color: #04AA6D;
+		color: white;
+		padding: 16px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+		opacity: 0.9;
+	}
+
+	.registerbtn:hover {
+		opacity: 1;
+	}
+
+	/* Add a blue text color to links */
+	a {
+		color: dodgerblue;
+	}
+
+	/* Set a grey background color and center the text of the "sign in" section */
+	.signin {
+		background-color: #f1f1f1;
+		text-align: center;
+	}
+</style>
 </head>
 
 <body>
 	<div id="header"></div>
 
-	
+
+	<form action="" method="post">
+		<div class="register-container">
+			<h1>Đăng kí</h1>
+			<hr>
+
+			<label for="username"><b>Username</b></label>
+			<input type="text" placeholder="username" name="username" id="username" required>
+			
+			<label for="identityCard"><b>Số CMND</b></label>
+			<input type="text" placeholder="identityCard" name="identityCard" id="identityCard" required>
+
+			<label for="psw"><b>Mật khẩu</b></label>
+			<input type="password" placeholder="Password" name="psw" id="psw" required>
+
+			<label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
+			<input type="password" placeholder="Password" name="psw-repeat" id="psw-repeat" required>
+			<hr>
+
+
+			<button type="submit" class="registerbtn">Đăng kí</button>
+		</div>
+
+		<div class="register-container signin">
+			<p>Đã có tài khoản? <a href="#">Đăng nhập</a>.</p>
+		</div>
+	</form>
 
 	<div id="footer"></div>
 </body>
