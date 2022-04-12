@@ -5,99 +5,124 @@ Từ trái sang phải
 Từ trên xuống dưới */
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 /* =========================================================== OVERVIEW =========================================================== */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-#logo-bar{
-  margin-top: 30px;
-  margin-bottom: 30px;
+
+/* ============================================================================================= WP-HEADER ================================================================================================== */
+
+
+/* ============================================================= TOP-BAR ================================================================= */
+
+.top-bar {
+    padding: 20px 0px;
+    background-color: #70caae;
 }
 
- /* ------------------- list-socials ------------------- */
- ul#list-socials {
-  padding-top: 40px;
+
+/* ============================================================= LOGO-BAR ================================================================= */
+
+#logo-bar {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* ------------------- list-socials ------------------- */
+
+ul#list-socials {
+    padding-top: 40px;
 }
 
 ul#list-socials li {
-  padding-right: 10px;
+    padding-right: 10px;
 }
 
 ul#list-socials li a {
-  color: #0a0a0a;
-  font-size: 40px;
-  display: block;
-  padding: 6px 12px;
+    color: #0a0a0a;
+    font-size: 40px;
+    display: block;
+    padding: 6px 12px;
 }
 
 ul#list-socials li:last-child {
-  padding-right: 0;
+    padding-right: 0;
 }
 
 ul#list-socials li:hover a {
-  color: #489158;
+    color: #489158;
 }
 
-/* ------------------- form search ------------------- */
-/* --------------------------- search-box -------------------------------- */
+
+/* --------------------------- search-box -------------------------- */
+
 form#search {
-  position: relative;
-  display: flex;
-  padding: 10px 0px;
-  margin-top: 20px;
+    position: relative;
+    display: flex;
+    padding: 10px 0px;
+    margin-top: 20px;
 }
 
 .search-txt {
-  position: absolute;
-  border: none;
-  background: none;
-  outline: none;
-  font-size: 16px;
-  transition: 0.6s;
-  line-height: 40px;
-  width: 0px;
-  bottom: 10px;
-  right: 50px;
+    position: absolute;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    transition: 0.6s;
+    line-height: 40px;
+    width: 0px;
+    bottom: 10px;
+    right: 50px;
 }
 
 form#search:hover .search-txt {
-  height: 40px;
-  border-bottom: 1px solid rgb(27, 17, 17);
-  color: black;
-  width: 200px;
-  bottom: 10px;
-  right: 50px;
+    height: 40px;
+    border-bottom: 1px solid rgb(27, 17, 17);
+    color: black;
+    width: 200px;
+    bottom: 10px;
+    right: 50px;
 }
 
 form#search .icon-search {
-  outline: none;
-  border: none;
-  background: none;
-  padding: 12px 28px 12px 22px;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 12px 28px 12px 22px;
 }
-/* ------------------- main-menu ------------------- */
+
+
+/* ============================================================= MAIN-MENU AND LOGIN ================================================================= */
+
+
+/* --------------------------- main-menu -------------------------- */
+
 ul#main-menu {
-  flex: 800px;
+    flex: 800px;
 }
 
 ul#main-menu li {
-  position: relative;
+    position: relative;
 }
 
 ul#main-menu li a {
@@ -111,300 +136,283 @@ ul#main-menu li a {
     transition: all 0.2s;
 }
 
-ul#main-menu > li:hover > a {
-  /* color: #a09f9f; */
-  font-weight: 500;
-  transition: all 0.2s;
-
-  background: #128a4e;
-  color: #fefefe;
+ul#main-menu>li:hover>a {
+    font-weight: 500;
+    transition: all 0.2s;
+    background: #128a4e;
+    color: #fefefe;
 }
 
 ul#main-menu .sub-menu {
-  z-index: 1;
-  position: absolute;
-  background-color: #d8d7d2;
-  width: 200px;
-  padding: 10px 0px;
-  list-style: none;
-  border-top: 2px solid rgb(61, 60, 60);
-  border-bottom: 2px solid rgb(61, 60, 60);
-  display: none;
+    z-index: 1;
+    position: absolute;
+    background-color: #d8d7d2;
+    width: 200px;
+    padding: 10px 0px;
+    list-style: none;
+    border-top: 2px solid rgb(61, 60, 60);
+    border-bottom: 2px solid rgb(61, 60, 60);
+    display: none;
 }
 
-ul#main-menu li:hover > ul.sub-menu {
-  display: block;
+ul#main-menu li:hover>ul.sub-menu {
+    display: block;
 }
 
 ul#main-menu .sub-menu a {
-  display: block;
-  padding: 5px 30px 5px 20px;
-  border-bottom: 1px solid rgb(163, 159, 159);
+    display: block;
+    padding: 5px 30px 5px 20px;
+    border-bottom: 1px solid rgb(163, 159, 159);
 }
 
-ul#main-menu .sub-menu > li:hover > a {
-  border-bottom: 1px solid rgb(61, 60, 60);
-  color: #4b4e57;
+ul#main-menu .sub-menu>li:hover>a {
+    border-bottom: 1px solid rgb(61, 60, 60);
+    color: #4b4e57;
 }
 
 ul#main-menu li .sub-menu li:last-child a {
-  border: none;
+    border: none;
 }
 
 ul#main-menu .sub-menu .sub-menu {
-  left: 200px;
-  top: -12px;
-}
-#logo-bar{
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.icon-buy a{
-  color: #000000;
-  transition: all 0.6s;
-  font-size: 26px;
-  margin: 0px 5px;
-  border-radius: 50%;
-
-}
-.icon-buy:hover a{
-  background-color: #bbbbbb;
-  padding: 20px;
-  border-radius: 50%;
+    left: 200px;
+    top: -12px;
 }
 
 
-/* ------------------- Đăng nhập và đăng ký ------------------- */
-.account::before{
+/* --------------------------- đăng nhập và đăng ký -------------------------- */
 
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
+.account {
+    margin-right: 20px;
+}
+
+.account::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f007";
     font-size: 20px;
-  }
+}
+
 .account a {
-  text-decoration: none;
-  color: black;
-  border: 2px solid black;
-  font-size: 20px;
-  display: inline-block;
-  padding: 0px 5px;
-  margin-left: 10px;
-  background-color: #f1f2f6;
-  border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0px 5px;
+    margin-left: 10px;
 }
 
 .account a:hover {
-  background-color: #4b806f;
-  color: rgb(255, 255, 255);
-  border: 2px solid rgb(59, 88, 59);
-
+    color: #2d3436;
 }
-/* ======================================== PRODUCT PAGE ============================================== */
-#product-page {
-    background-color: #f3f3f3;
-  }
-  
-  #product-page a {
-    padding: 12px 10px;
-    display: inline-block;
-    font-size: 17px;
-  }
-  
-  #product-page .icon-home {
-    color: #222222;
-    font-size: 18px;
-    font-weight: 700;
-  }
-  
-  #product-page .home {
-    color: #222222;
-    font-weight: 500;
-  }
-  
-  #product-page .icon-link-page {
-    font-size: 17px;
-    color: #565656;
-  }
-  
-  #product-page .product {
-    color: #222222;
-  }
-/* ========================================================================================================================================================== */
+
+
+/* ============================================================================================= WP-CONTENT ================================================================================================== */
+
 section {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 
-  
+/* ------------------- introduction-bar ------------------- */
+
+.introduction-bar {
+    /* background-image: url(''); */
+    background-color: #dfe6e9;
+}
+
+.introduction-bar h1 {
+    padding: 40px 0px;
+    font-size: 40px;
+}
+
+#wp-content a {
+    margin: 40px 0px;
+}
+
+
 /* =============================================================== WP-SIGN-IN-PROMOTION =================================================================== */
+
 #wp-sign-in-promotion {
-  background-image: url("../images/bg-2.jpg");
-  background-position-y: center;
-  background-size: cover;
-  padding-top: 76px;
-  padding-bottom: 124px;
+    background-image: url("../images/bg-1.jpg");
+    background-position-y: center;
+    background-size: cover;
+    padding-top: 76px;
+    padding-bottom: 124px;
 }
 
 #wp-sign-in-promotion h3 {
-  color: #ffffff;
-  font-size: 36px;
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 #wp-sign-in-promotion p {
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 300;
-  text-align: center;
-  margin: 0;
-  padding: 16px 0px 56px 0px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    padding: 16px 0px 56px 0px;
 }
 
 #wp-sign-in-promotion #sign-in-email {
-  position: relative;
-  text-align: center;
+    position: relative;
+    text-align: center;
 }
 
 #wp-sign-in-promotion input {
-  width: 900px;
-  padding: 18px 165px 18px 64px;
-  background: none;
-  color: #ffffff;
-  font-size: 18px;
-  border: 2px solid #ffffff;
-  outline: none;
+    width: 900px;
+    padding: 18px 165px 18px 64px;
+    background: none;
+    color: #ffffff;
+    font-size: 18px;
+    border: 2px solid #ffffff;
+    outline: none;
 }
 
 #wp-sign-in-promotion input::placeholder {
-  color: #ffffff;
-  font-size: 18px;
-  text-transform: uppercase;
-  background: none;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: none;
 }
 
 #wp-sign-in-promotion .sign-in {
-  position: absolute;
-  color: #ffffff;
-  font-size: 21px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 16px 38px 15px 45px;
-  background-color: #35aec0;
-  right: 137px;
-  bottom: 2px;
-  outline: none;
-  border: none;
+    position: absolute;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 16px 38px 15px 45px;
+    background-color: #35aec0;
+    right: 137px;
+    bottom: 2px;
+    outline: none;
+    border: none;
 }
 
 #wp-sign-in-promotion .sign-in:hover {
-  background-color: #79c8d4;
+    background-color: #79c8d4;
 }
 
+
 /* =============================================================== WP-FOOTER =================================================================== */
+
 #wp-footer {
-  background: #1b1b1b;
-  color: #ffffff;
-  padding: 72px 0px;
+    background: #1b1b1b;
+    color: #ffffff;
+    padding: 72px 0px;
 }
 
 #wp-footer a {
-  color: #ffffff;
-  display: block;
+    color: #ffffff;
+    display: block;
 }
 
 #wp-footer .widget .widget-head h3 {
-  padding-left: 0;
-  font-size: 28px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 30px;
+    padding-left: 0;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
+
 /* ------------------- about us ------------------- */
+
 .widget.about-us {
-  flex: 405px;
-  padding-right: 45px;
+    flex: 405px;
+    padding-right: 45px;
 }
 
 .widget.about-us .post-desc {
-  font-size: 16px;
-  padding-bottom: 10px;
-  text-align: justify;
-  font-weight: 300;
+    font-size: 16px;
+    padding-bottom: 10px;
+    text-align: justify;
+    font-weight: 300;
 }
 
+
 /* ------------------- category ------------------- */
+
 .widget.category {
-  flex: 210px;
-  padding-right: 15px;
-  padding-left: 15px;
+    flex: 210px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .widget.category h3 {
-  padding-top: 16px;
+    padding-top: 55px;
 }
 
 .widget.category .list-category li {
-  position: relative;
+    position: relative;
 }
 
 .widget.category .list-category li a {
-  padding: 9px 0px;
-  padding-left: 20px;
-  font-size: 16px;
+    padding: 9px 0px;
+    padding-left: 20px;
+    font-size: 16px;
 }
 
 .widget li a {
-  font-size: 16px;
-  color: #ffffff;
+    font-size: 16px;
+    color: #ffffff;
 }
 
 .widget li .cate {
-  padding-right: 14px;
-  font-size: 22px;
-  position: absolute;
-  left: 0px;
-  top: 4px;
+    padding-right: 14px;
+    font-size: 22px;
+    position: absolute;
+    left: 0px;
+    top: 4px;
 }
 
+
 /* ------------------- featured-news ------------------- */
+
 .widget.featured-news {
-  flex: 263px;
-  padding-right: 15px;
-  padding-left: 45px;
+    flex: 263px;
+    padding-right: 15px;
+    padding-left: 45px;
 }
 
 .widget.featured-news h3 {
-  padding-top: 16px;
+    padding-top: 55px;
 }
 
 .widget.featured-news .list-featured-news li {
-  position: relative;
+    position: relative;
 }
 
 .widget.featured-news .list-featured-news li a {
-  padding: 9px 0px;
-  padding-left: 20px;
+    padding: 9px 0px;
+    padding-left: 20px;
 }
+
 
 /* ------------------- fanpage ------------------- */
+
 .widget.fanpage {
-  flex: 307px;
-  padding-left: 15px;
+    flex: 307px;
+    padding-left: 15px;
 }
 
+
 /* =========================================================== WP-COPYRIGHT =========================================================== */
+
 #wp-copyright {
-  padding: 13px 0px;
+    padding: 13px 0px;
 }
 
 .copyright {
-  font-size: 16px;
-  color: #454545;
-  text-align: center;
-  margin: 0;
+    font-size: 16px;
+    color: #454545;
+    text-align: center;
+    margin: 0;
 }
