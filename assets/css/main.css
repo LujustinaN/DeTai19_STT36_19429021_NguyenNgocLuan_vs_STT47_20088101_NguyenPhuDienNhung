@@ -182,6 +182,10 @@ ul#main-menu .sub-menu .sub-menu {
 
 /* --------------------------- đăng nhập và đăng ký -------------------------- */
 
+.account {
+    margin-right: 20px;
+}
+
 .account::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -192,19 +196,15 @@ ul#main-menu .sub-menu .sub-menu {
 .account a {
     text-decoration: none;
     color: black;
-    border: 2px solid black;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
     display: inline-block;
     padding: 0px 5px;
     margin-left: 10px;
-    background-color: #f1f2f6;
-    border-radius: 5px;
 }
 
 .account a:hover {
-    background-color: #4b806f;
-    color: rgb(255, 255, 255);
-    border: 2px solid rgb(59, 88, 59);
+    color: #2d3436;
 }
 
 
@@ -219,8 +219,8 @@ section {
 }
 
 #sidebar .box-head h3 {
-    padding: 5px 10px;
-    background-color: #0c7a57;
+    padding: 8px 10px;
+    background-color: #128a4e;
     color: #fefefe;
     font-size: 20px;
 }
@@ -420,19 +420,19 @@ ul#menu-left>li>a::before {
 .icon-gift,
 .discount,
 .icon-discount {
-    background-color: #10ac84;
+    background-color: #00b894;
 }
 
 #customer-benefit .list-customer-benefit li.free-ship:hover {
-    background-color: #b4666c;
+    background-color: #eccc68;
 }
 
 #customer-benefit .list-customer-benefit li.membership-card:hover {
-    background-color: #ac9981;
+    background-color: #ff6b81;
 }
 
 #customer-benefit .list-customer-benefit li.discount:hover {
-    background-color: #0abde3;
+    background-color: #ff7f50;
 }
 
 
@@ -702,6 +702,7 @@ ul.list-hot-products {
     font-size: 20px;
     display: block;
     padding: 14px 0px;
+    text-align: justify;
 }
 
 .box.trends .item .post-excerpt {
@@ -827,7 +828,7 @@ ul.list-hot-products {
 }
 
 .widget.category h3 {
-    padding-top: 16px;
+    padding-top: 55px;
 }
 
 .widget.category .list-category li {
@@ -863,7 +864,7 @@ ul.list-hot-products {
 }
 
 .widget.featured-news h3 {
-    padding-top: 16px;
+    padding-top: 55px;
 }
 
 .widget.featured-news .list-featured-news li {
@@ -873,14 +874,6 @@ ul.list-hot-products {
 .widget.featured-news .list-featured-news li a {
     padding: 9px 0px;
     padding-left: 20px;
-}
-
-
-/* ------------------- fanpage ------------------- */
-
-.widget.fanpage {
-    flex: 307px;
-    padding-left: 15px;
 }
 
 

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+    <!-- Slider -->
+    <link rel="stylesheet" href="assets/plugins/slider/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/owlcarousel/assets/owl.theme.default.css">
+    <script src="assets/plugins/slider/jquery.min.js"></script>
+    <script src="assets/plugins/slider/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Slider-show and slick-slider-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>GreenHOLO.com</title>
+</head>
+
+<!-- Script for slider -->
+<script>
+    $(document).ready(function() {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 33,
+            nav: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    });
+</script>
+<!-- Style for slider -->
+<style>
+    .slick-arrow {
+        position: absolute;
+        padding: 28px;
+        background-color: #1dd1a1;
+        border-radius: 40px;
+        top: 250px;
+    }
+    
+    .slick-arrow:hover {
+        background-color: #1dd1a1;
+    }
+    
+    .slick-prev {
+        left: -19px;
+        z-index: 1;
+    }
+    
+    .slick-next {
+        right: -19px;
+    }
+    
+    .slick-prev:before {
+        font-family: fontawesome;
+        font-size: 22px;
+        position: absolute;
+        top: 17px;
+        left: 24px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+    
+    .slick-next:before {
+        font-family: fontawesome;
+        font-size: 22px;
+        position: absolute;
+        top: 17px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+    
+    .slick-prev:before {
+        content: '\f104';
+    }
+    
+    .slick-next:before {
+        content: '\f105';
+    }
+</style>
+
+<body>
+    <div id="wrapper">
+        <!-- ==================================================================================== WP-HEADER ====================================================================================== -->
+        <header id="wp-header">
+            <!-- ===================================== TOP-BAR =================================== -->
+            <div class="top-bar"></div>
+            <!-- end top-bar -->
+
+            <!-- ===================================== LOGO-BAR =================================== -->
+            <div class="container">
+                <div id="logo-bar" class="d-flex jc-between">
+                    <div class="follow-icon">
+                        <ul id="list-socials" class="d-flex">
+                            <li>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="">
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-pinterest-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end follow-icon -->
+
+                    <div class="logo">
+                        <a href="">
+                            <img src="assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- end logo -->
+
+                    <form id="search">
+                        <input type="text" class="search-txt" placeholder="Tìm kiếm sản phẩm">
+                        <button class="icon-search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <!-- end form search -->
+
+                </div>
+                <!-- end logo-bar -->
+
+            </div>
+
+            <!-- ============================= MAIN-MENU AND FORM LOGIN =========================== -->
+            <div class="container">
+                <nav class="d-flex jc-between">
+                    <ul id="main-menu" class="d-flex">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="introduction.html">Giới thiệu</a></li>
+                        <li><a href="products.html">Sản phẩm</a>
+                            <ul class="sub-menu">
+                                <li><a href="category-product-02.html">Áo</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="detail-product-03.html">Kaki</a></li>
+                                        <li><a href="detail-product-03.html">Jean</a></li>
+                                        <li><a href="detail-product-03.html">Len</a></li>
+                                        <li><a href="detail-product-03.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-product-02.html">Quần</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="detail-product-03.html">Kaki</a></li>
+                                        <li><a href="detail-product-03.html">Jean</a></li>
+                                        <li><a href="detail-product-03.html">Len</a></li>
+                                        <li><a href="detail-product-03.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-product-02.html">Giày dép</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="detail-product-03.html">Kaki</a></li>
+                                        <li><a href="detail-product-03.html">Jean</a></li>
+                                        <li><a href="detail-product-03.html">Len</a></li>
+                                        <li><a href="detail-product-03.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-product-02.html">Phụ kiện</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="detail-product-03.html">Kaki</a></li>
+                                        <li><a href="detail-product-03.html">Jean</a></li>
+                                        <li><a href="detail-product-03.html">Len</a></li>
+                                        <li><a href="detail-product-03.html">Short</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="category-news-04.html">Trang trí nhà</a>
+                            <ul class="sub-menu">
+                                <li><a href="category-news-04.html">Phòng khách</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="category-news-04.html">Kaki</a></li>
+                                        <li><a href="category-news-04.html">Jean</a></li>
+                                        <li><a href="category-news-04.html">Len</a></li>
+                                        <li><a href="category-news-04.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-news-04.html">Phòng tắm</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="category-news-04.html">Kaki</a></li>
+                                                <li><a href="category-news-04.html">Jean</a></li>
+                                                <li><a href="category-news-04.html">Len</a></li>
+                                                <li><a href="category-news-04.html">Short</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="category-news-04.html">Jean</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="category-news-04.html">Kaki</a></li>
+                                                <li><a href="category-news-04.html">Jean</a></li>
+                                                <li><a href="category-news-04.html">Len</a></li>
+                                                <li><a href="category-news-04.html">Short</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="category-news-04.html">Len</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="category-news-04.html">Kaki</a></li>
+                                                <li><a href="category-news-04.html">Jean</a></li>
+                                                <li><a href="category-news-04.html">Len</a></li>
+                                                <li><a href="category-news-04.html">Short</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="category-news-04.html">Short</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="category-news-04.html">Kaki</a></li>
+                                                <li><a href="category-news-04.html">Jean</a></li>
+                                                <li><a href="category-news-04.html">Len</a></li>
+                                                <li><a href="category-news-04.html">Short</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-news-04.html">Nhà bếp</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="category-news-04.html">Kaki</a></li>
+                                        <li><a href="category-news-04.html">Jean</a></li>
+                                        <li><a href="category-news-04.html">Len</a></li>
+                                        <li><a href="category-news-04.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-news-04.html">Phòng đọc sách</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="category-news-04.html">Kaki</a></li>
+                                        <li><a href="category-news-04.html">Jean</a></li>
+                                        <li><a href="category-news-04.html">Len</a></li>
+                                        <li><a href="category-news-04.html">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="category-news-04.html">Phòng ngủ</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="category-news-04.html">Kaki</a></li>
+                                        <li><a href="category-news-04.html">Jean</a></li>
+                                        <li><a href="category-news-04.html">Len</a></li>
+                                        <li><a href="category-news-04.html">Short</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="trend-news.html">Xu hướng</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Áo</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Quần</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Giày dép</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Phụ kiện</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Kaki</a></li>
+                                        <li><a href="">Jean</a></li>
+                                        <li><a href="">Len</a></li>
+                                        <li><a href="">Short</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+                    </ul>
+                    <!-- end main-menu -->
+
+                    <div class="account">
+                        <a href="" class="login">Đăng nhập</a>
+                        <a href="" class="regis">Đăng ký</a>
+                    </div>
+                    <!-- end account -->
+                </nav>
+            </div>
+        </header>
+        <!-- end wp-header -->
+
+        <!-- ==================================================================================== WP-CONTENT====================================================================================== -->
+        <section id="wp-content">
+            <div class="introduction-bar">
+                <h1 class="text-center">Liên hệ GreenHOLO - Trang trí nhà</h1>
+            </div>
+            <div class="container">
+                <h1 class="text-center" style="font-size: 35px; margin-top: 50px; margin-bottom: 30px;">Thông tin liên hệ GreenHOLO</h1>
+                <p class="p-intro"><b>Địa chỉ cửa hàng: </b>187 Bạch Đằng, Phường 3, Quận Gò Vấp, Tp. Hồ Chí Minh</p>
+                <p class="p-intro">
+                    <b>Số điện thoại liên hệ: </b>0327028319
+                </p>
+                <p class="p-intro">
+                    <b>Địa chỉ cửa hàng trên Google Map: </b>
+                </p>
+                <div class="container text-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9286499534023!2d106.67311561395137!3d10.816772261407515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175291e144fcf0b%3A0x7812224ab549dead!2zSOG6u20gMTg3IELhuqFjaCDEkOG6sW5nLCBQaMaw4budbmcgMywgR8OyIFbhuqVwLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1649851931924!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="container">
+                <h1 class="text-center" style="font-size: 35px; margin-top: 50px; margin-bottom: 30px;">Các thành viên của GreenHOLO</h1>
+                <div class="members d-flex text-center" style="margin-bottom: 50px;">
+                    <div class="member">
+                        <a href=""><img style="width:50%;" src="assets/images/luan.jpg" alt=""></a>
+                        <h4 class="full-name" style="margin-top:10px; font-size:20px;">
+                            Nguyễn Ngọc Luân
+                        </h4>
+                    </div>
+                    <div class="member">
+                        <a href=""><img style="width:40%;" src="assets/images/nhung.jpg" alt=""></a>
+                        <h4 class="full-name" style="margin-top:10px; font-size:20px;">
+                            Nguyễn Phú Điền Nhung
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end wp-content -->
+        <!-- ===================================================================== WP-SIGN-IN-PROMOTION ======================================================================= -->
+        <div id="wp-sign-in-promotion">
+            <div class="container">
+                <h3>Đăng ký để nhận khuyến mãi</h3>
+                <p>Đăng ký để nhận được thông tin khuyến mãi mới nhất</p>
+                <form action="" id="sign-in-email">
+                    <input type="text" placeholder="Nhập email của bạn">
+                    <button class="sign-in">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+        <!-- End sign-in-email-promotion -->
+
+        <!-- ===================================================================== WP-FOOTER ======================================================================= -->
+        <div id="wp-footer">
+            <div class="container d-flex">
+
+                <!-- about-us -->
+                <div class="widget about-us">
+                    <div class="widget-head">
+                        <h3>
+                            <a href="home.html" id="logo">
+                                <img src="assets/images/GreenLOHO.png">
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="widget-body">
+                        <p class="post-desc">Chúng tôi cung cấp tất cả các mặt hàng quà tặng tân gia và đồ trang trí nhà. Chúng tôi luôn muốn cung cấp cho bạn những sản phẩm và dịch vụ tốt nhất theo tiêu chí: “Your House – Your Style”. Hi vọng bạn sẽ lựa chọn được những mặt
+                            hàng ưng ý nhất từ GreenHOLO.</p>
+                    </div>
+                </div>
+                <!-- end about-us -->
+
+                <div class="widget category">
+                    <div class="widget-head">
+                        <h3>Danh mục</h3>
+                    </div>
+                    <div class="widget-body">
+                        <ul class="list-category">
+                            <li>
+                                <a href=""><span class="cate">•</span>Trang trí phòng khách</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Trang trí phòng tắm</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Trang trí phòng ngủ</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Trang trí phòng đọc sách</a>
+                            </li>
+                            <li>
+                                <a href=""><span class="cate">•</span>Trang trí nhà bếp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end category -->
+
+                <!-- featured-news -->
+                <div class="widget featured-news">
+                    <div class="widget-head">
+                        <h3>Thông tin liên hệ</h3>
+                    </div>
+                    <div class="widget-body">
+                        <h4>Địa chỉ liên hệ:</h4>
+                        <p>187 Bạch Đằng, Phường 3, Quận Gò Vấp, Tp. Hồ Chí Minh</p>
+                        <h4 style="display: inline-block;">Số điện thoại:</h4>
+                        <p style="display:inline-block"> 0327028319</p>
+                        <h4>Bản đồ</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3416840645255!2d106.6601590139512!3d10.785120961984317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ece758039a7%3A0x787d7e9058914994!2zTWlzYSBIb3VzZSAtIEPhu61hIEjDoG5nIMSQ4buTIERlY29yIFRyYW5nIFRyw60gTmjDoCDEkOG6uXA!5e0!3m2!1svi!2s!4v1649670589188!5m2!1svi!2s"
+                            width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                </div>
+                <!-- end featured-news -->
+
+            </div>
+        </div>
+        <!-- End wp-footer -->
+
+        <!-- ===================================================================== WP-COPYRIGHT ======================================================================= -->
+        <div id="wp-copyright">
+            <p class="copyright">20088101 - Nguyễn Phú Điền Nhung</p>
+            <p class="copyright">19429021 - Nguyễn Ngọc Luân</p>
+        </div>
+        <!-- End wp-copyright -->
+    </div>
+    <!-- end wrapper -->
+    <!-- ============================================================================================================================================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ======================================================================= SLICK-SLIDER ========================================================================== -->
+    <script>
+        $('.filtering').slick({
+            slidesToShow: 4,
+            slidesToScroll: 4
+        });
+
+        var filtered = false;
+
+        $('.js-filter').on('click', function() {
+            if (filtered === false) {
+                $('.filtering').slick('slickFilter', ':even');
+                $(this).text('Unfilter Slides');
+                filtered = true;
+            } else {
+                $('.filtering').slick('slickUnfilter');
+                $(this).text('Filter Slides');
+                filtered = false;
+            }
+        });
+    </script>
+</body>
+
+</html>
