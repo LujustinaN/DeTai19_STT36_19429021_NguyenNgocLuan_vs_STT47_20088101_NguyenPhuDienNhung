@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/introduction.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
     <!-- Slider -->
@@ -24,16 +26,15 @@
     />
     <title>GreenHOLO.com</title>
 
-	<!-- jquery -->
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-	crossorigin="anonymous">
-	</script>
-	<script> 
-		$(function(){
-		$("#header").load("./views/header.html"); 
-		$("#footer").load("./views/footer.html"); 
-		});
-	</script> 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function() {
+            $("#header").load("./views/header.html");
+            $("#footer").load("./views/footer.html");
+        });
+    </script>
 </head>
 
 <!-- Script for slider -->
@@ -111,10 +112,10 @@
 
 <body>
     <div id="wrapper">
-       
-	<div id="header"></div>
+        <!-- ==================================================================================== HEADER====================================================================================== -->
 
-        <!-- end wp-header -->
+        <div id="header"></div>
+        <!-- end header -->
 
         <!-- ==================================================================================== WP-CONTENT====================================================================================== -->
         <section id="wp-content">
@@ -206,7 +207,7 @@
         </div>
         <!-- End sign-in-email-promotion -->
 
-	<div id="footer"></div>
+        <div id="footer"></div>
 
     </div>
     <!-- end wrapper -->

@@ -28,186 +28,6 @@ ul {
 }
 
 
-/* ============================================================================================= WP-HEADER ================================================================================================== */
-
-
-/* ============================================================= TOP-BAR ================================================================= */
-
-.top-bar {
-    padding: 20px 0px;
-    background-color: #70caae;
-}
-
-
-/* ============================================================= LOGO-BAR ================================================================= */
-
-#logo-bar {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-
-/* ------------------- list-socials ------------------- */
-
-ul#list-socials {
-    padding-top: 40px;
-}
-
-ul#list-socials li {
-    padding-right: 10px;
-}
-
-ul#list-socials li a {
-    color: #0a0a0a;
-    font-size: 40px;
-    display: block;
-    padding: 6px 12px;
-}
-
-ul#list-socials li:last-child {
-    padding-right: 0;
-}
-
-ul#list-socials li:hover a {
-    color: #489158;
-}
-
-
-/* --------------------------- search-box -------------------------- */
-
-form#search {
-    position: relative;
-    display: flex;
-    padding: 10px 0px;
-    margin-top: 20px;
-}
-
-.search-txt {
-    position: absolute;
-    border: none;
-    background: none;
-    outline: none;
-    font-size: 16px;
-    transition: 0.6s;
-    line-height: 40px;
-    width: 0px;
-    bottom: 10px;
-    right: 50px;
-}
-
-form#search:hover .search-txt {
-    height: 40px;
-    border-bottom: 1px solid rgb(27, 17, 17);
-    color: black;
-    width: 200px;
-    bottom: 10px;
-    right: 50px;
-}
-
-form#search .icon-search {
-    outline: none;
-    border: none;
-    background: none;
-    padding: 12px 28px 12px 22px;
-}
-
-
-/* ============================================================= MAIN-MENU AND LOGIN ================================================================= */
-
-
-/* --------------------------- main-menu -------------------------- */
-
-ul#main-menu {
-    flex: 800px;
-}
-
-ul#main-menu li {
-    position: relative;
-}
-
-ul#main-menu li a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #000000;
-    padding: 8px 15px;
-    display: block;
-    transition: all 0.2s;
-}
-
-ul#main-menu>li:hover>a {
-    font-weight: 500;
-    transition: all 0.2s;
-    background: #128a4e;
-    color: #fefefe;
-}
-
-ul#main-menu .sub-menu {
-    z-index: 1;
-    position: absolute;
-    background-color: #d8d7d2;
-    width: 200px;
-    padding: 10px 0px;
-    list-style: none;
-    border-top: 2px solid rgb(61, 60, 60);
-    border-bottom: 2px solid rgb(61, 60, 60);
-    display: none;
-}
-
-ul#main-menu li:hover>ul.sub-menu {
-    display: block;
-}
-
-ul#main-menu .sub-menu a {
-    display: block;
-    padding: 5px 30px 5px 20px;
-    border-bottom: 1px solid rgb(163, 159, 159);
-}
-
-ul#main-menu .sub-menu>li:hover>a {
-    border-bottom: 1px solid rgb(61, 60, 60);
-    color: #4b4e57;
-}
-
-ul#main-menu li .sub-menu li:last-child a {
-    border: none;
-}
-
-ul#main-menu .sub-menu .sub-menu {
-    left: 200px;
-    top: -12px;
-}
-
-
-/* --------------------------- đăng nhập và đăng ký -------------------------- */
-
-.account {
-    margin-right: 20px;
-}
-
-.account::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f007";
-    font-size: 20px;
-}
-
-.account a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: 600;
-    display: inline-block;
-    padding: 0px 5px;
-    margin-left: 10px;
-}
-
-.account a:hover {
-    color: #2d3436;
-}
-
-
 /* ============================================================================================= WP-CONTENT ================================================================================================== */
 
 section {
@@ -420,19 +240,19 @@ ul#menu-left>li>a::before {
 .icon-gift,
 .discount,
 .icon-discount {
-    background-color: #00b894;
+    background-color: #128a4e;
 }
 
 #customer-benefit .list-customer-benefit li.free-ship:hover {
-    background-color: #eccc68;
+    background-color: rgb(8, 78, 157);
 }
 
 #customer-benefit .list-customer-benefit li.membership-card:hover {
-    background-color: #ff6b81;
+    background-color: rgb(8, 78, 157);
 }
 
 #customer-benefit .list-customer-benefit li.discount:hover {
-    background-color: #ff7f50;
+    background-color: rgb(8, 78, 157);
 }
 
 
@@ -770,16 +590,17 @@ ul.list-hot-products {
     font-weight: 600;
     text-transform: uppercase;
     padding: 16px 38px 15px 45px;
-    background-color: #35aec0;
+    background-color: #128a4e;
     right: 137px;
     bottom: 2px;
     outline: none;
     border: none;
 }
 
-#wp-sign-in-promotion .sign-in:hover {
-    background-color: #79c8d4;
-}
+
+/* #wp-sign-in-promotion .sign-in:hover {
+    background-color: rgb(8, 78, 157);
+} */
 
 
 /* =============================================================== WP-FOOTER =================================================================== */

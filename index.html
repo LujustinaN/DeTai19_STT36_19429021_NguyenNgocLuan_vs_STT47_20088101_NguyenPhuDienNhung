@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
     <!-- Slider -->
@@ -23,16 +25,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <title>GreenHOLO | Trang chủ</title>
-	<!-- jquery -->
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-	crossorigin="anonymous">
-	</script>
-	<script> 
-		$(function(){
-			$("#header").load("./views/header.html"); 
-			$("#footer").load("./views/footer.html"); 
-		});
-	</script> 
+    <!-- jquery -->
+
+    <script>
+        $(function() {
+            $("#header").load("./views/header.html");
+            $("#footer").load("./views/footer.html");
+        });
+    </script>
 </head>
 
 <!-- Script for slider -->
@@ -111,8 +111,7 @@
 <body>
     <div id="wrapper">
         <!-- ==================================================================================== WP-HEADER ====================================================================================== -->
-		
-		<div id="header"></div>
+        <div id="header"></div>
 
         <!-- ==================================================================================== WP-CONTENT====================================================================================== -->
         <section id="wp-content">
@@ -915,7 +914,7 @@
             <div class="container">
                 <div class="box trends">
                     <div class="box-head">
-                        <a href="category-news-04.html">Ý tưởng</a>
+                        <a href="category-news-04.html">Xu hướng</a>
                     </div>
                     <div class="box-body">
                         <div class="owl-carousel owl-theme jc-between">
@@ -1032,12 +1031,14 @@
         </div>
         <!-- End sign-in-email-promotion -->
 
-		<div id="footer"></div>
+        <div id="footer"></div>
+        <!-- end footer -->
     </div>
     <!-- end wrapper -->
     <!-- ============================================================================================================================================================== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- ======================================================================= SLICK-SLIDER ========================================================================== -->
     <script>
         $('.filtering').slick({
