@@ -142,10 +142,9 @@ ul#main-menu .sub-menu {
     position: absolute;
     background-color: white;
     width: 350px;
-    padding: 10px 0px;
     list-style: none;
-    /* border-top: 2px solid rgb(61, 60, 60);
-    border-bottom: 2px solid rgb(61, 60, 60); */
+    border-top: 2px solid rgb(61, 60, 60);
+    border-bottom: 2px solid rgb(61, 60, 60);
     display: none;
 }
 
@@ -158,21 +157,22 @@ ul#main-menu .sub-menu a {
     text-transform: capitalize;
     font-size: 14px;
     padding: 5px 30px 5px 20px;
-    /* border-bottom: 1px solid rgb(163, 159, 159); */
+    border-bottom: 1px solid rgb(163, 159, 159);
 }
 
 ul#main-menu .sub-menu>li:hover>a {
-    /* border-bottom: 1px solid rgb(61, 60, 60); */
+    border-bottom: 1px solid rgb(61, 60, 60);
     color: #4e5a7b;
 }
 
-ul#main-menu li .sub-menu li:last-child a {
+
+/* ul#main-menu li .sub-menu li:last-child a {
     border: none;
-}
+} */
 
 ul#main-menu .sub-menu .sub-menu {
     left: 350px;
-    top: -12px;
+    top: -2px;
 }
 
 
