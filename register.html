@@ -104,30 +104,27 @@
     <div id="header"></div>
 
 
-    <form action="" method="post">
+    <form action="" method="get">
         <div class="register-container">
             <h1>Đăng kí</h1>
             <hr>
 
-            <label for="username"><b>Username</b></label>
-            <input type="text" placeholder="username" name="username" id="username" required>
-
-            <label for="identityCard"><b>Số CMND</b></label>
-            <input type="text" placeholder="identityCard" name="identityCard" id="identityCard" required>
+            <label for="username" ><b>Username</b></label>
+            <input type="text" placeholder="username" name="username" id="username" pattern="^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$" title="Không dùng kí tự đặc biệt, username dài hơn hoặc bằng 8 kí tự">
 
             <label for="psw"><b>Mật khẩu</b></label>
-            <input type="password" placeholder="Password" name="psw" id="psw" required>
+            <input type="password" placeholder="Password" name="psw" id="psw" pattern=".{8,}" title="Mật khẩu dài hơn 8 kí tự">
 
             <label for="psw-repeat"><b>Nhập lại mật khẩu</b></label>
-            <input type="password" placeholder="Password" name="psw-repeat" id="psw-repeat" required>
-            <hr>
+            <input type="password" placeholder="Password" name="psw-repeat" id="psw-repeat" pattern=".{8,}" title="Mật khẩu dài hơn 8 kí tự">
+            <br>
 
 
             <button type="submit" class="registerbtn">Đăng kí</button>
         </div>
 
         <div class="register-container signin">
-            <p>Đã có tài khoản? <a href="#">Đăng nhập</a>.</p>
+            <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a>.</p>
         </div>
     </form>
 

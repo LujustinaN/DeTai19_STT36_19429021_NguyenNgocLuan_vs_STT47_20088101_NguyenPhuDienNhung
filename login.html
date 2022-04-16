@@ -24,7 +24,7 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <title>GreenHOLO | login</title>
+    <title>GreenHOLO | register</title>
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
     </script>
@@ -34,17 +34,95 @@
             $("#footer").load("./views/footer.html");
         });
     </script>
-
+    <!-- form css -->
+    <style>
+        form {
+            margin: 0 auto;
+            width: 500px;
+        }
+        /* Add padding to containers */
+        
+        .register-container {
+            padding: 16px;
+            background-color: white;
+            width: 500px;
+        }
+        /* Full-width input fields */
+        
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        /* Overwrite default styles of hr */
+        
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+        /* Set a style for the submit button */
+        
+        .registerbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        
+        .registerbtn:hover {
+            opacity: 1;
+        }
+        /* Add a blue text color to links */
+        
+        a {
+            color: dodgerblue;
+        }
+        /* Set a grey background color and center the text of the "sign in" section */
+        
+        .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
     <div id="header"></div>
-    <!--Remaining section-->
-    <!-- ===================================================================== WP-LOGIN ======================================================================= -->
 
 
-    GreenHOLO.com
-    <!-- end wp-login -->
+    <form action="#" method="get">
+        <div class="register-container">
+            <h1>Đăng nhập</h1>
+            <hr>
+
+            <label for="username" ><b>Username</b></label>
+            <input type="text" placeholder="username" name="username" id="username" pattern="^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$" title="Không dùng kí tự đặc biệt, username dài hơn hoặc bằng 8 kí tự">
+
+            <label for="psw"><b>Mật khẩu</b></label>
+            <input type="password" placeholder="Password" name="psw" id="psw" pattern=".{8,}" title="Mật khẩu dài hơn 8 kí tự">
+
+
+            <button type="submit" class="registerbtn">Đăng nhập</button>
+        </div>
+
+        <div class="register-container signin">
+            <p>Chưa có tài khoản ? <a href="register.html">Đăng kí</a>.</p>
+        </div>
+    </form>
 
     <div id="footer"></div>
 </body>
