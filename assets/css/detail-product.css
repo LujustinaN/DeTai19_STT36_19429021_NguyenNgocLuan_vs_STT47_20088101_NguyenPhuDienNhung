@@ -678,7 +678,7 @@ ul.list-product {
 }
 
 .list-selling-products li .product-item img {
-    max-width: 100%;
+    width: 100px;
     height: auto;
     overflow: hidden;
     padding-right: 10px;
