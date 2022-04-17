@@ -703,6 +703,11 @@ ul.list-product {
     font-weight: 600;
 }
 
+.product-thumb img {
+    width: 330px;
+    height: auto;
+}
+
 .list-selling-products .product-item .product-info .product-price {
     color: #d40707;
     font-size: 15px;
