@@ -63,8 +63,7 @@
 		});
 	</script>
 
-	<!-- This should be located lowest. Wait for elements fully loaded then execute this -->
-	<!-- <script src="assets/js/effects.js"></script> -->
+	<script src="assets/js/effects.js"></script>
 </head>
 
 <!-- Script for slider -->
@@ -884,26 +883,7 @@
 		<!-- end footer -->
 	</div>
 	<!-- end wrapper -->
-	<script>
-			$('.filtering').slick({
-		slidesToShow: 4,
-		slidesToScroll: 4
-	});
-
-	var filtered = false;
-
-	$('.js-filter').on('click', function () {
-		if (filtered === false) {
-			$('.filtering').slick('slickFilter', ':even');
-			$(this).text('Unfilter Slides');
-			filtered = true;
-		} else {
-			$('.filtering').slick('slickUnfilter');
-			$(this).text('Filter Slides');
-			filtered = false;
-		}
-	});
-	</script>
+	<script defer> $(clickSlider()); </script>
 </body>
 
 </html>

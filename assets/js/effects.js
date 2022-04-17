@@ -1,4 +1,4 @@
-$(clickSlider());
+
 
 function clickSlider()
 {
