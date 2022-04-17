@@ -100,7 +100,7 @@ function getProductSlice(start, end)
 	return productArray.slice(start, end);
 }
 
-function trendingProducts()
+function trendingProductsRender()
 {
 
 	var html = ``;
