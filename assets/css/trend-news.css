@@ -33,6 +33,40 @@ ul {
 }
 
 
+/* ======================================== PRODUCT PAGE ============================================== */
+
+#product-page {
+    background-color: #f3f3f3;
+}
+
+#product-page a {
+    padding: 12px 10px;
+    display: inline-block;
+    font-size: 17px;
+    /* font-weight: 600; */
+}
+
+#product-page .icon-home {
+    color: #222222;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#product-page .home {
+    color: #222222;
+    font-weight: 500;
+}
+
+#product-page .icon-link-page {
+    font-size: 17px;
+    color: #565656;
+}
+
+#product-page .product {
+    color: #222222;
+}
+
+
 /* ======================================== WP-CONTENT ============================================== */
 
 #wp-content {
