@@ -2,101 +2,68 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenHOLO | Trang chủ</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GreenHOLO | Trang chủ</title>
 
-    <!-- style -->
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
-    <!-- Slider -->
-    <link rel="stylesheet" href="assets/plugins/slider/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/plugins/slider/owlcarousel/assets/owl.theme.default.css">
+	<!-- style -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/global.css">
+	<link rel="stylesheet" href="assets/css/header.css">
+	<link rel="stylesheet" href="assets/css/footer.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+	
+	
+	
+	<!-- Slider -->
+	<link rel="stylesheet" href="assets/css/plugins/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/plugins/owl.theme.default.min.css">
+	<script src="assets/js/plugins/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/plugins/owl.carousel.min.js"></script>
 
-    <script src="assets/plugins/slider/jquery.min.js"></script>
-    <script src="assets/plugins/slider/owlcarousel/owl.carousel.min.js"></script>
-    <!-- Slider-show and slick-slider-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <!-- jquery -->
-
-    <!-- Slider-show and slick-slider-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        $('.filtering').slick({
-            slidesToShow: 4,
-            slidesToScroll: 4
-        });
-
-        var filtered = false;
-
-        $('.js-filter').on('click', function() {
-            if (filtered === false) {
-                $('.filtering').slick('slickFilter', ':even');
-                $(this).text('Unfilter Slides');
-                filtered = true;
-            } else {
-                $('.filtering').slick('slickUnfilter');
-                $(this).text('Filter Slides');
-                filtered = false;
-            }
-        });
-    </script>
-    <!-- END Slider-show and slick-slider-->
-
-
-    <!-- js local include -->
-    <script type="text/javascript" src="assets/js/products.js"></script>
-    <!-- js call -->
-    <script>
-        $(document).ready(function() {
-            var html = ``;
-            productArray.forEach(element => {
-                html += ` <li>
-						<div class="product-item">
-							<div class="product-top">
-								<a href="../detail-product.html" class="product-thumb">
-									<img src=${element.img} alt="">
-								</a>
-							</div>
-							<div class="product-info">
-								<a href="../detail-product.html" class="product-name">${element.name}</a>
-								<div class="product-price">${element.price} VND</div>
-								<del>${element.pricedel} VND</del>
-							</div>
-							<div class="add-cart">
-								<a href="">Thêm giỏ hàng</a>
-							</div>
+	<link rel="stylesheet" href="assets/css/plugins/slick-theme.css">
+	<link rel="stylesheet" href="assets/css/plugins/slick.css">
+	<script src="assets/js/plugins/slick.min.js"></script>
+	
+	<!-- js local include -->
+	<script type="text/javascript" src="assets/js/products.js"></script>
+	<!-- js call -->
+	<script>
+		var clockProducts = ``;
+		productArray.forEach(element => {
+			clockProducts += ` <li>
+					<div class="product-item">
+						<div class="product-top">
+							<a href="../detail-product.html" class="product-thumb">
+								<img src=${element.img} alt="">
+							</a>
 						</div>
-					</li>`;
-            });
-            $('#products').html(html);
-        });
-    </script>
+						<div class="product-info">
+							<a href="../detail-product.html" class="product-name">${element.name}</a>
+							<div class="product-price">${element.price} VND</div>
+							<del>${element.pricedel} VND</del>
+						</div>
+						<div class="add-cart">
+							<a href="">Thêm giỏ hàng</a>
+						</div>
+					</div>
+				</li>`;
+		});
+		
+	</script>
 
-    <script>
-        $(function() {
-            $("#header").load("./views/header.html");
-            $("#footer").load("./views/footer.html");
+	<script>
+		$(function () {
+			$("#header").load("./views/header.html");
+			$("#footer").load("./views/footer.html");
 
-            $("#promotion").load("./views/promotion.html");
-        });
-    </script>
+			$("#promotion").load("./views/promotion.html");
+		});
+	</script>
+
+	<script src="assets/js/effects.js"></script>
 </head>
 
 <!-- Script for slider -->
@@ -173,165 +140,171 @@
 </style>
 
 <body>
-    <div id="wrapper">
-        <!-- ==================================================================================== WP-HEADER ====================================================================================== -->
-        <div id="header"></div>
+	<div id="wrapper">
+		<!-- ==================================================================================== WP-HEADER ====================================================================================== -->
+		<div id="header"></div>
 
-        <!-- ==================================================================================== WP-CONTENT====================================================================================== -->
-        <section id="wp-content">
-            <div class="container d-flex">
-                <!-- ===================================== MENU-LEFT (SIDEBAR) =================================== -->
-                <div id="sidebar">
-                    <div class="box">
-                        <div class="box-head">
-                            <h3>Danh mục sản phẩm</h3>
-                        </div>
-                        <div class="box-body">
-                            <ul id="menu-left">
-                                <li><a href="">Đang khuyến mãi</a></li>
-                                <li><a href="">Theo chủ đề</a></li>
-                                <li><a href="">Bình hoa & hoa</a></li>
-                                <li><a href="">Trang trí kệ</a></li>
-                                <li><a href="">Đồng hồ treo tường</a></li>
-                                <li><a href="">Đồ trang trí bàn làm việc</a></li>
-                                <li><a href="">Thảm trang trí</a></li>
-                                <li><a href="">Vỏ gối sofa</a></li>
-                                <li><a href="">Tranh dán tường (Decal)</a></li>
-                                <li><a href="">Gương trang trí</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- end sidebar -->
+		<!-- ==================================================================================== WP-CONTENT====================================================================================== -->
+		<section id="wp-content">
+			<div class="container d-flex">
+				<!-- ===================================== MENU-LEFT (SIDEBAR) =================================== -->
+				<div id="sidebar">
+					<div class="box">
+						<div class="box-head">
+							<h3>Danh mục sản phẩm</h3>
+						</div>
+						<div class="box-body">
+							<ul id="menu-left">
+								<li><a href="">Đang khuyến mãi</a></li>
+								<li><a href="">Theo chủ đề</a></li>
+								<li><a href="">Bình hoa & hoa</a></li>
+								<li><a href="">Trang trí kệ</a></li>
+								<li><a href="">Đồng hồ treo tường</a></li>
+								<li><a href="">Đồ trang trí bàn làm việc</a></li>
+								<li><a href="">Thảm trang trí</a></li>
+								<li><a href="">Vỏ gối sofa</a></li>
+								<li><a href="">Tranh dán tường (Decal)</a></li>
+								<li><a href="">Gương trang trí</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end sidebar -->
 
-                <!-- ======================================= SLIDER SHOW ======================================= -->
-                <div id="content">
-                    <div id="slider-show">
-                        <!-- image slider start -->
-                        <div class="slider">
-                            <div class="slides">
-                                <!-- radio buttons start -->
-                                <input type="radio" name="radio-btn" id="radio1">
-                                <input type="radio" name="radio-btn" id="radio2">
-                                <input type="radio" name="radio-btn" id="radio3">
-                                <input type="radio" name="radio-btn" id="radio4">
-                                <!-- radio buttons end -->
+				<!-- ======================================= SLIDER SHOW ======================================= -->
+				<div id="content">
+					<div id="slider-show">
+						<!-- image slider start -->
+						<div class="slider">
+							<div class="slides">
+								<!-- radio buttons start -->
+								<input type="radio" name="radio-btn" id="radio1">
+								<input type="radio" name="radio-btn" id="radio2">
+								<input type="radio" name="radio-btn" id="radio3">
+								<input type="radio" name="radio-btn" id="radio4">
+								<!-- radio buttons end -->
 
-                                <!-- slide images start -->
-                                <div class="slide first">
-                                    <img src="assets/images/slider/slider-1.png" alt="">
-                                </div>
-                                <div class="slide">
-                                    <img src="assets/images/slider/slider-2.png" alt="">
-                                </div>
-                                <div class="slide">
-                                    <img src="assets/images/slider/slider-3.png" alt="">
-                                </div>
-                                <div class="slide">
-                                    <img src="assets/images/slider/slider-4.png" alt="">
-                                </div>
-                                <!-- slide images end -->
+								<!-- slide images start -->
+								<div class="slide first">
+									<img src="assets/images/slider/slider-1.png" alt="">
+								</div>
+								<div class="slide">
+									<img src="assets/images/slider/slider-2.png" alt="">
+								</div>
+								<div class="slide">
+									<img src="assets/images/slider/slider-3.png" alt="">
+								</div>
+								<div class="slide">
+									<img src="assets/images/slider/slider-4.png" alt="">
+								</div>
+								<!-- slide images end -->
 
-                                <!-- automatic navigation start -->
-                                <div class="navigation-auto">
-                                    <div class="auto-btn1"></div>
-                                    <div class="auto-btn2"></div>
-                                    <div class="auto-btn3"></div>
-                                    <div class="auto-btn4"></div>
-                                </div>
-                                <!-- automatic navigation end -->
+								<!-- automatic navigation start -->
+								<div class="navigation-auto">
+									<div class="auto-btn1"></div>
+									<div class="auto-btn2"></div>
+									<div class="auto-btn3"></div>
+									<div class="auto-btn4"></div>
+								</div>
+								<!-- automatic navigation end -->
 
-                            </div>
-                            <!-- end slides -->
+							</div>
+							<!-- end slides -->
 
-                            <!-- manual navigation start -->
-                            <div class="navigation-manual">
-                                <label for="radio1" class="manual-btn"></label>
-                                <label for="radio2" class="manual-btn"></label>
-                                <label for="radio3" class="manual-btn"></label>
-                                <label for="radio4" class="manual-btn"></label>
-                            </div>
-                            <!-- manual navigation end -->
+							<!-- manual navigation start -->
+							<div class="navigation-manual">
+								<label for="radio1" class="manual-btn"></label>
+								<label for="radio2" class="manual-btn"></label>
+								<label for="radio3" class="manual-btn"></label>
+								<label for="radio4" class="manual-btn"></label>
+							</div>
+							<!-- manual navigation end -->
 
-                        </div>
-                        <!-- image slider end -->
+						</div>
+						<!-- image slider end -->
 
-                        <script type="text/javascript">
-                            var counter = 1;
-                            setInterval(function() {
-                                document.getElementById('radio' + counter).checked = true;
-                                counter++;
-                                if (counter > 4) {
-                                    counter = 1;
-                                }
-                            }, 5000);
-                        </script>
-                    </div>
-                    <!-- End slider-show -->
-                </div>
-                <!-- end content -->
-            </div>
+						<script type="text/javascript">
+							var counter = 1;
+							setInterval(function () {
+								document.getElementById('radio' + counter).checked = true;
+								counter++;
+								if (counter > 4) {
+									counter = 1;
+								}
+							}, 5000);
+						</script>
+					</div>
+					<!-- End slider-show -->
+				</div>
+				<!-- end content -->
+			</div>
 
-            <!-- ===================================== CUSTOMER-BENIFIT =================================== -->
-            <div id="customer-benefit" class="container">
-                <ul class="list-customer-benefit d-flex">
-                    <li class="free-ship">
-                        <a>Thanh toán dễ dàng</a>
-                        <button class="icon-ship"><i class="fas fa-shopping-cart"></i></button>
-                    </li>
-                    <li class="membership-card">
-                        <a>Tiết kiệm thời gian</a>
-                        <button class="icon-gift"><i class="fa-solid fa-clock"></i></button>
-                    </li>
-                    <li class="discount">
-                        <a>Đa dạng sản phẩm</a>
-                        <button class="icon-discount"><i class="fa-solid fa-couch"></i></button>
-                    </li>
-                </ul>
-            </div>
-            <!-- End customer-benefit -->
-            <!-- ===================================== PRODUCT-THEME (ĐỒNG HỒ TREO TƯỜNG)=================================== -->
-            <div class="container">
-                <div class="box product-theme">
-                    <div class="box-head">
-                        <a href=""> Đồng hồ treo tường </a>
-                    </div>
-                    <div class="box-body">
-                        <ul class="list-product-theme filtering" id="products"></ul>
-                    </div>
-                </div>
-            </div>
-            <!-- end product-theme -->
-            <!-- ========================================= MÔ TẢ TIÊU CHÍ ================================================== -->
-            <div class="container">
-                <div class="box-description">
-                    <div class="box-head">
-                        <h1>Đồ Decor Trang Trí Nhà Hiện Đại & Sang Trọng</h1>
-                    </div>
-                    <div class="box-body">
-                        <p>GreenHOLO hoạt động với tiêu chí mong muốn tất cả các khách hàng của mình đều có thể tự tay mua đồ decor và trang trí lại tổ ấm ngôi nhà mình mà không mất quá nhiều chi phí. Giúp cho ngôi nhà của quý khách trở nên khang trang và
-                            lung linh nhất. Là nơi mỗi khi đi làm về chúng ta có thể tận hưởng không gian sống và cảm thấy thoải mái. Là nơi mỗi khi tụ tập bạn bè hay đón tiếp những vị khách quý tới bạn có thể cảm thấy tự hào.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end box-desciption -->
-            <!-- ========================================= HOT-PRODUCTS ================================================== -->
-            <div class="container">
-                <div class="box hot-products">
-                    <div class="box-head">
-                        <a href=""> Sản phẩm nổi bật </a>
-                    </div>
-                    <div class="box-body">
-                        <ul class="list-hot-products">
-                            <li>
-                                <div class="product-item">
-                                    <div class="product-top">
-                                        <a href="../detail-product.html" class="product-thumb">
-                                            <img src="assets/images/hot/pic-1.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="product-info">
-                                        <a href="../detail-product.html" class="product-name">Đèn bão biển vintage trang
+			<!-- ===================================== CUSTOMER-BENIFIT =================================== -->
+			<div id="customer-benefit" class="container">
+				<ul class="list-customer-benefit d-flex">
+					<li class="free-ship">
+						<a>Thanh toán dễ dàng</a>
+						<button class="icon-ship"><i class="fas fa-shopping-cart"></i></button>
+					</li>
+					<li class="membership-card">
+						<a>Tiết kiệm thời gian</a>
+						<button class="icon-gift"><i class="fa-solid fa-clock"></i></button>
+					</li>
+					<li class="discount">
+						<a>Đa dạng sản phẩm</a>
+						<button class="icon-discount"><i class="fa-solid fa-couch"></i></button>
+					</li>
+				</ul>
+			</div>
+			<!-- End customer-benefit -->
+			<!-- ===================================== PRODUCT-THEME (ĐỒNG HỒ TREO TƯỜNG)=================================== -->
+			<div class="container">
+				<div class="box product-theme">
+					<div class="box-head">
+						<a href=""> Đồng hồ treo tường </a>
+					</div>
+					<div class="box-body">
+						<ul class="list-product-theme filtering" id="products">
+							<script> $('#products').html(clockProducts); </script>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end product-theme -->
+			<!-- ========================================= MÔ TẢ TIÊU CHÍ ================================================== -->
+			<div class="container">
+				<div class="box-description">
+					<div class="box-head">
+						<h1>Đồ Decor Trang Trí Nhà Hiện Đại & Sang Trọng</h1>
+					</div>
+					<div class="box-body">
+						<p>GreenHOLO hoạt động với tiêu chí mong muốn tất cả các khách hàng của mình đều có thể tự tay
+							mua đồ decor và trang trí lại tổ ấm ngôi nhà mình mà không mất quá nhiều chi phí. Giúp cho
+							ngôi nhà của quý khách trở nên khang trang và
+							lung linh nhất. Là nơi mỗi khi đi làm về chúng ta có thể tận hưởng không gian sống và cảm
+							thấy thoải mái. Là nơi mỗi khi tụ tập bạn bè hay đón tiếp những vị khách quý tới bạn có thể
+							cảm thấy tự hào.</p>
+					</div>
+				</div>
+			</div>
+			<!-- end box-desciption -->
+			<!-- ========================================= HOT-PRODUCTS ================================================== -->
+			<div class="container">
+				<div class="box hot-products">
+					<div class="box-head">
+						<a href=""> Sản phẩm nổi bật </a>
+					</div>
+					<div class="box-body">
+						<ul class="list-hot-products">
+							<li>
+								<div class="product-item">
+									<div class="product-top">
+										<a href="../detail-product.html" class="product-thumb">
+											<img src="assets/images/hot/pic-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="product-info">
+										<a href="../detail-product.html" class="product-name">Đèn bão biển vintage trang
 											trí</a>
                                         <div class="product-price">555.000đ</div>
                                         <del></del>
@@ -850,37 +823,49 @@
                                 <a href="detail-trend-news.html" class="post-title">Cách trang trí Phòng ngủ nhỏ đẹp
 									cute
 									cho nữ đơn giản và dễ thương</a>
-                                <p class="post-excerpt">Nhu cầu decor trang trí phòng ngủ đẹp cho nữ ngày càng cao. Các căn phòng ngủ có thể thiết kế theo rất nhiều kiểu khác nhau. Nhưng điểm chung và cũng là vấn đề mà các bạn nữ thường lo lắng là: Làm thế nào để cho phòng ngủ
-                                    của mình cute nhất Việc […]</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end trends -->
+								<p class="post-excerpt">Nhu cầu decor trang trí phòng ngủ đẹp cho nữ ngày càng cao. Các
+									căn phòng ngủ có thể thiết kế theo rất nhiều kiểu khác nhau. Nhưng điểm chung và
+									cũng là vấn đề mà các bạn nữ thường lo lắng là: Làm thế nào để cho phòng ngủ
+									của mình cute nhất Việc […]</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end trends -->
 
-            <!-- ================================================ VIDEO GREENHOLO ================================================== -->
-            <div class="container">
-                <div class="box-video text-center">
-                    <div class="box-head">
-                        <h1 style="font-size: 32px;">VIDEO ĐỒ DECOR TẠI GreenHOLO</h1>
-                    </div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BrUz0sTypBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nbz30_aI5Go" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/E_D7AEHy5kM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
-        <!-- end wp-content -->
-        <!-- ===================================================================== WP-SIGN-IN-PROMOTION ======================================================================= -->
-        <div id="promotion"> </div>
-        <!-- End sign-in-email-promotion -->
-        <!-- ===================================================================== FOOTER ======================================================================= -->
+			<!-- ================================================ VIDEO GREENHOLO ================================================== -->
+			<div class="container">
+				<div class="box-video text-center">
+					<div class="box-head">
+						<h1 style="font-size: 32px;">VIDEO ĐỒ DECOR TẠI GreenHOLO</h1>
+					</div>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/BrUz0sTypBQ"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/nbz30_aI5Go"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/E_D7AEHy5kM"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+		<!-- end wp-content -->
+		<!-- ===================================================================== WP-SIGN-IN-PROMOTION ======================================================================= -->
+		<div id="promotion"> </div>
+		<!-- End sign-in-email-promotion -->
+		<!-- ===================================================================== FOOTER ======================================================================= -->
 
-        <div id="footer"></div>
-        <!-- end footer -->
-    </div>
-    <!-- end wrapper -->
+		<div id="footer"></div>
+		<!-- end footer -->
+	</div>
+	<!-- end wrapper -->
+	<script defer> $(clickSlider()); </script>
 </body>
 
 </html>

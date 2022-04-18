@@ -12,27 +12,26 @@
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/products.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script>
+
+
+	<!-- Slider -->
+	<link rel="stylesheet" href="assets/css/plugins/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/plugins/owl.theme.default.min.css">
+	<script src="assets/js/plugins/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/plugins/owl.carousel.min.js"></script>
+
+	<link rel="stylesheet" href="assets/css/plugins/slick-theme.css">
+	<link rel="stylesheet" href="assets/css/plugins/slick.css">
+	<script src="assets/js/plugins/slick.min.js"></script>
+	
+	<script src="assets/js/products.js"></script>
+
     <script>
         $(function() {
             $("#header").load("./views/header.html");
             $("#footer").load("./views/footer.html");
         });
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+	</script>
 </head>
 
 <body>
@@ -65,218 +64,32 @@
 
                     <!-- list-product -->
                     <ul class="list-product">
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/clock/pic-1.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="detail-product.html" class="product-name">Đồng hồ dán tường mica</a>
-                                    <div class="product-price">765.000đ</div>
-                                    <del>900.000đ</del>
-                                </div>
-                                <div class="add-cart">
-                                    <a href="">Thêm giỏ hàng</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/clock/pic-2.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="detail-product.html" class="product-name">Đồng hồ đầu hưu hoa tài
-                                        lộc</a>
-                                    <div class="product-price">545.000đ</div>
-                                    <del>720.000đ</del>
-                                </div>
-                                <div class="add-cart">
-                                    <a href="">Thêm giỏ hàng</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/clock/pic-3.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="detail-product.html" class="product-name">Đồng hồ Vintage 58cm mã
-                                        03</a>
-                                    <div class="product-price">595,000 VNĐ</div>
-                                    <del></del>
-                                </div>
-                                <div class="add-cart">
-                                    <a href="">Thêm giỏ hàng</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/clock/pic-4.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="detail-product.html" class="product-name">Đồng hồ dán tường mica</a>
-                                    <div class="product-price">325,000 VNĐ</div>
-                                    <del></del>
-                                </div>
-                                <div class="add-cart">
-                                    <a href="">Thêm giỏ hàng</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/clock/pic-5.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="detail-product.html" class="product-name">Đồng hồ hiện đại viền bạc
-                                        01</a>
-                                    <div class="product-price">315,000 VNĐ</div>
-                                    <del></del>
-                                </div>
-                                <div class="add-cart">
-                                    <a href="">Thêm giỏ hàng</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/clock/pic-6.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="detail-product.html" class="product-name">Đồng hồ treo tường cao
-                                        cấp</a>
-                                    <div class="product-price">1,550,000 VNĐ</div>
-                                    <del>1,750,000</del>
-                                </div>
-                                <div class="add-cart">
-                                    <a href="">Thêm giỏ hàng</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/clock/pic-7.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="detail-product.html" class="product-name">Mica Đồng hồ số đơn
-                                        giản</a>
-                                    <div class="product-price">165,000 VNĐ</div>
-                                    <del>300.000đ</del>
-                                </div>
-                                <div class="add-cart">
-                                    <a href="">Thêm giỏ hàng</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/clock/pic-8.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="detail-product.html" class="product-name">Mica đồng hồ số cách
-                                        điệu</a>
-                                    <div class="product-price">325.000đ</div>
-                                    <del>500.000đ</del>
-                                </div>
-                                <div class="add-cart">
-                                    <a href="">Thêm giỏ hàng</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/clock/pic-9.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="detail-product.html" class="product-name">Mica Đồng hồ số đơn
-                                        giản</a>
-                                    <div class="product-price">555.000đ</div>
-                                    <del>800.000đ</del>
-                                </div>
-                                <div class="add-cart">
-                                    <a href="">Thêm giỏ hàng</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/clock/pic-10.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="detail-product.html" class="product-name">Đồng hồ đầu hươu</a>
-                                    <div class="product-price">255.000đ</div>
-                                    <del>300.000đ</del>
-                                </div>
-                                <div class="add-cart">
-                                    <a href="">Thêm giỏ hàng</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/clock/pic-11.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="detail-news-05.psd" class="product-name">Đồng hồ đầu hươu hoa tài
-                                        lộc</a>
-                                    <div class="product-price">255.000đ</div>
-                                    <del>300.000đ</del>
-                                </div>
-                                <div class="add-cart">
-                                    <a href="">Thêm giỏ hàng</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-item">
-                                <div class="product-top">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/clock/pic-12.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="product-info">
-                                    <a href="detail-news-05.psd" class="product-name">Đồng hồ đầu hươu</a>
-                                    <div class="product-price">255.000đ</div>
-                                    <del>300.000đ</del>
-                                </div>
-                                <div class="add-cart">
-                                    <a href="">Thêm giỏ hàng</a>
-                                </div>
-                            </div>
-                        </li>
+						<script>
+								var listProduct = ``;
+								productArray.forEach(e => {
+									listProduct += ` 
+										<li>
+											<div class="product-item">
+												<div class="product-top">
+													<a href="detail-product.html?productid=${e.productId}" class="product-thumb">
+														<img src=${e.img} alt="">
+													</a>
+												</div>
+												<div class="product-info">
+													<a href="detail-product.html?productid=${e.productId}" class="product-name">Đồng hồ dán tường mica</a>
+													<div class="product-price">${e.price} đ</div>
+													<del>${e.pricedel} đ</del>
+												</div>
+												<div class="add-cart">
+													<a href="">Thêm giỏ hàng</a>
+												</div>
+											</div>
+										</li>`;
+								});
+								
+							$('.list-product').html(listProduct);
+						</script>
+                        
                     </ul>
                     <!-- end list-product -->
 
@@ -342,119 +155,8 @@
                     </div>
                     <div class="box-body">
                         <ul class="list-selling-products">
-                            <li>
-                                <div class="product-item">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/selling-products/pic-1.jpg" alt="">
-                                    </a>
-                                    <div class="product-info">
-                                        <a href="detail-product.html" class="product-name">
-                                            Cách Trang Trí Quán Cafe Bình Dân</a>
-                                        <div class="product-price">345.000đ</div>
-                                        <del>380.000đ</del>
-                                        <div class="detail">
-                                            <a href="">Chi tiết <span><i class="fas fa-angle-right"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product-item">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/selling-products/pic-2.jpg" alt="">
-                                    </a>
-                                    <div class="product-info">
-                                        <a href="detail-product.html" class="product-name">
-                                            Cách Trang Trí Quán Cafe Bình Dân</a>
-                                        <div class="product-price">345.000đ</div>
-                                        <del>380.000đ</del>
-                                        <div class="detail">
-                                            <a href="">Chi tiết <span><i class="fas fa-angle-right"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product-item">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/selling-products/pic-3.jpg" alt="">
-                                    </a>
-                                    <div class="product-info">
-                                        <a href="detail-product.html" class="product-name">
-                                            Cách Trang Trí Quán Cafe Bình Dân</a>
-                                        <div class="product-price">345.000đ</div>
-                                        <del>380.000đ</del>
-                                        <div class="detail">
-                                            <a href="">Chi tiết <span><i class="fas fa-angle-right"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product-item">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/selling-products/pic-4.jpg" alt="">
-                                    </a>
-                                    <div class="product-info">
-                                        <a href="detail-product.html" class="product-name">
-                                            Cách Trang Trí Quán Cafe Bình Dân</a>
-                                        <div class="product-price">345.000đ</div>
-                                        <del>380.000đ</del>
-                                        <div class="detail">
-                                            <a href="">Chi tiết <span><i class="fas fa-angle-right"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product-item">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/selling-products/pic-5.jpg" alt="">
-                                    </a>
-                                    <div class="product-info">
-                                        <a href="detail-product.html" class="product-name">
-                                            Cách Trang Trí Quán Cafe Bình Dân</a>
-                                        <div class="product-price">345.000đ</div>
-                                        <del>380.000đ</del>
-                                        <div class="detail">
-                                            <a href="">Chi tiết <span><i class="fas fa-angle-right"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product-item">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/selling-products/pic-6.jpg" alt="">
-                                    </a>
-                                    <div class="product-info">
-                                        <a href="detail-product.html" class="product-name">
-                                            Cách Trang Trí Quán Cafe Bình Dân</a>
-                                        <div class="product-price">345.000đ</div>
-                                        <del>380.000đ</del>
-                                        <div class="detail">
-                                            <a href="">Chi tiết <span><i class="fas fa-angle-right"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="product-item">
-                                    <a href="detail-product.html" class="product-thumb">
-                                        <img src="assets/images/selling-products/pic-7.jpg" alt="">
-                                    </a>
-                                    <div class="product-info">
-                                        <a href="detail-product.html" class="product-name">
-                                            Cách Trang Trí Quán Cafe Bình Dân</a>
-                                        <div class="product-price">345.000đ</div>
-                                        <del>380.000đ</del>
-                                        <div class="detail">
-                                            <a href="">Chi tiết <span><i class="fas fa-angle-right"></i></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+							<script> $('.list-selling-products').html(trendingProductsRender()); </script>
+						</ul>
                     </div>
                 </div>
                 <!-- End selling-products -->

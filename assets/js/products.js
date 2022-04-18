@@ -188,6 +188,34 @@ var productArray = [{
 
 ];
 
-function getProductSlice(start, end) {
-    return productArray.slice(start, end);
+function getProductSlice(start, end) 
+{
+	return productArray.slice(start, end);
+}
+
+function trendingProductsRender()
+{
+
+	var html = ``;
+	getProductSlice(0,6).forEach(e => {
+		html += `
+			<li>
+				<div class="product-item">
+					<a href="detail-product.html?productid=${e.productId}" class="product-thumb">
+						<img src=${e.img} alt="">
+					</a>
+					<div class="product-info">
+						<a href="detail-product.html?productid=${e.productId}" class="product-name">
+							${e.name}</a>
+						<br>
+						<div class="product-price">${e.price} đ</div>
+						<del>${e.pricedel} đ</del>
+						<div class="detail">
+							<a href="detail-product.html?productid=${e.productId}">Chi tiết <span><i class="fas fa-angle-right"></i></span></a>
+						</div>
+					</div>
+				</div>
+			</li>`;
+	});
+	return html;
 }
