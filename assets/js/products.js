@@ -128,9 +128,9 @@ var productArray = [{
         productId: 10012,
         brand: 'OEM',
         img: 'assets/images/selling-products/pic-12.jpg',
-        name: '',
-        price: 595000,
-        pricedel: 900000,
+        name: 'Bộ 3 lông vũ trang trí',
+        price: 225000,
+        pricedel: 0,
         description: '',
         detailDescription: ''
     },
@@ -138,51 +138,41 @@ var productArray = [{
         productId: 10013,
         brand: 'OEM',
         img: 'assets/images/selling-products/pic-13.jpg',
-        name: '',
-        price: 595000,
-        pricedel: 900000,
-        description: '',
-        detailDescription: ''
+        name: 'Giỏ sắt lưới màu đen- màu trắng',
+        price: 139000,
+        pricedel: 200000,
+        description: 'Giỏ sắt lưới màu đen- màu trắng đựng đồ tiện dụng',
+        detailDescription: '<b>Tên sản phẩm:</b> giỏ sắt lưới đựng đồ.<br> <b>Chất liệu:</b> sắt.<br><b>Màu sắc:</b> màu đen, màu trắng. <br><b>Kích thước:</b> 21.8 x 28 x 15.8 (cao x dài x rộng). <b>Sử dụng:</b> đựng đồ, đựng bảng gỗ treo cửa, bảng gỗ trang trí, bảng gỗ treo cửa trang trí, đồ trang trí bàn, trang trí tủ kệ phòng khách, trang trí phòng ngủ, trang trí nhà, decor quán cafe đẹp, trang trí tường, trang trí spa, cửa hàng, tặng quà tân gia nhà mới, tặng khai trương phát tài, trang trí phong thủy…v….v.. <br>Xem thêm sản phẩm trang trí tại link: <a href="https://greenholo.htcnw.kienlab.com/products.html">đây</a>'
     },
     {
         productId: 10014,
         brand: 'OEM',
         img: 'assets/images/selling-products/pic-14.jpg',
-        name: '',
-        price: 595000,
-        pricedel: 900000,
-        description: '',
+        name: 'Móc câu treo trang trí',
+        price: 79000,
+        pricedel: 0,
+        description: 'Móc câu treo trang trí chủ đề biển phong cách địa trung hải',
         detailDescription: ''
     },
     {
         productId: 10015,
         brand: 'OEM',
         img: 'assets/images/selling-products/pic-15.jpg',
-        name: '',
-        price: 595000,
-        pricedel: 900000,
+        name: 'Hộp khăn giấy sắt container xanh',
+        price: 95000,
+        pricedel: 120000,
         description: '',
         detailDescription: ''
     },
     {
-        productId: 10011,
+        productId: 10016,
         brand: 'OEM',
-        img: 'assets/images/selling-products/pic-11.jpg',
-        name: '',
-        price: 595000,
-        pricedel: 900000,
-        description: '',
-        detailDescription: ''
-    },
-    {
-        productId: 10011,
-        brand: 'OEM',
-        img: 'assets/images/selling-products/pic-11.jpg',
-        name: '',
-        price: 595000,
-        pricedel: 900000,
-        description: '',
-        detailDescription: ''
+        img: 'assets/images/selling-products/pic-16.jpg',
+        name: 'Hộp đựng giấy vệ sinh',
+        price: 55000,
+        pricedel: 0,
+        description: 'Hộp đựng giấy vệ sinh tiện lợi để trong nhà tắm – phòng wc dán tường chống thấm',
+        detailDescription: '<b>Tên sản phẩm:</b> Hộp đựng giấy vệ sinh tiện lợi để trong nhà tắm – phòng wc dán tường chống thấm. <br><b>Chất liệu: </b>nhựa. <br><b>Màu sắc:</b> xám và trắng. <br><b>Sử dụng:</b> trang trí nhà tắm, để nhà vệ sinh, đồ gia dụng, đựng giấy nhà vệ sinh , wc, trang trí nhà, decor quán cafe đẹp, trang trí tường, trang trí spa, cửa hàng, tặng quà tân gia nhà mới, tặng khai trương phát tài, trang trí phong thủy…v….v.. <br>Xem thêm sản phẩm trang trí tại link: <a href="https://greenholo.htcnw.kienlab.com/products.html">đây</a>'
     }
 
 
