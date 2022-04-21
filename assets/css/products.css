@@ -114,6 +114,9 @@ ul.list-product {
 .list-product li .product-thumb img {
     transition: all 0.25s;
     border-bottom: 1px solid #c9c9c9;
+    width: 260px; /* width of container */
+    height: 260px; /* height of container */
+    object-fit: cover;
 }
 
 .list-product li .product-thumb {
@@ -307,9 +310,12 @@ li.active a {
 }
 
 .list-selling-products li .product-item img {
-    max-width: 100%;
     height: auto;
-    overflow: hidden;
+    transition: all 0.25s;
+    border-bottom: 1px solid #c9c9c9;
+    width: 150px; /* width of container */
+    height: 150px; /* height of container */
+    object-fit: cover;
 }
 
 .list-selling-products li .product-item:hover img {
