@@ -265,12 +265,16 @@ li.active a {
     border-bottom: 1px dashed #d4d4d4;
     padding: 20px 0px 20px 0px;
 }
-
 .list-selling-products li .product-item img {
-    max-width: 100%;
     height: auto;
-    overflow: hidden;
+    transition: all 0.25s;
+    border-bottom: 1px solid #c9c9c9;
+    width: 150px; /* width of container */
+    height: 150px; /* height of container */
+    object-fit: cover;
 }
+
+
 
 .list-selling-products li .product-item:hover img {
     transform: scale(1.05);
