@@ -29,6 +29,7 @@
 	
 	<!-- js local include -->
 	<script type="text/javascript" src="assets/js/products.js"></script>
+	<script type="text/javascript" src="assets/js/cart.js"></script>
 	<!-- js call -->
 	<script>
 		var clockProducts = ``;
@@ -36,17 +37,17 @@
 			clockProducts += ` <li>
 					<div class="product-item">
 						<div class="product-top">
-							<a href="../detail-product.html" class="product-thumb">
+							<a href="detail-product.html?productid=${element.productId}" class="product-thumb">
 								<img src=${element.img} alt="">
 							</a>
 						</div>
 						<div class="product-info">
-							<a href="../detail-product.html" class="product-name">${element.name}</a>
+							<a href="detail-product.html?productid=${element.productId}" class="product-name">${element.name}</a>
 							<div class="product-price">${element.price} VND</div>
 							<del>${element.pricedel} VND</del>
 						</div>
 						<div class="add-cart">
-							<a href="">Thêm giỏ hàng</a>
+							<a href="javascript:addToCart(${element.productId})">Thêm giỏ hàng</a>
 						</div>
 					</div>
 				</li>`;
@@ -303,17 +304,17 @@
 									<li>
 										<div class="product-item">
 											<div class="product-top">
-												<a href="../detail-product.html" class="product-thumb">
+												<a href="detail-product.html?productid=${e.productId}" class="product-thumb">
 													<img src=${e.img} alt="">
 												</a>
 											</div>
 											<div class="product-info">
-												<a href="../detail-product.html" class="product-name">${e.name}</a>
+												<a href="detail-product.html?productid=${e.productId}" class="product-name">${e.name}</a>
 												<div class="product-price">${e.price} đ</div>
 												<del>${e.pricedel} đ</del>
 											</div>
 											<div class="add-cart">
-												<a href="">Thêm giỏ hàng</a>
+												<a href="javascript:addToCart(${e.productId})">Thêm giỏ hàng</a>
 											</div>
 										</div>
 									</li>
@@ -323,7 +324,7 @@
 							</script>
 
 						</ul>
-                        <a href="" class="see-all">Xem tất cả</a>
+                        <a href="products.html" class="see-all">Xem tất cả</a>
                     </div>
                 </div>
             </div>
@@ -340,22 +341,22 @@
 							<script>
 
 							var html = ``;
-							productArray.forEach(e => {
+							getProductSlice(4,10).forEach(e => {
 								html += `
 									<li>
 										<div class="product-item">
 											<div class="product-top">
-												<a href="../detail-product.html" class="product-thumb">
+												<a href="detail-product.html?productid=${e.productId}" class="product-thumb">
 													<img src=${e.img} alt="">
 												</a>
 											</div>
 											<div class="product-info">
-												<a href="../detail-product.html" class="product-name">${e.name}</a>
+												<a href="detail-product.html?productid=${e.productId}" class="product-name">${e.name}</a>
 												<div class="product-price">${e.price} đ</div>
 												<del>${e.pricedel} đ</del>
 											</div>
 											<div class="add-cart">
-												<a href="">Thêm giỏ hàng</a>
+												<a href="javascript:addToCart(${e.productId})">Thêm giỏ hàng</a>
 											</div>
 										</div>
 									</li>`
