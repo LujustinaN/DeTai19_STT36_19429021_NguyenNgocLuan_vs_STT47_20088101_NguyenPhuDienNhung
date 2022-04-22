@@ -3,22 +3,22 @@
 /* =========================================================== OVERVIEW =========================================================== */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 
@@ -28,81 +28,81 @@ ul {
 /* ============================================================= TOP-BAR ================================================================= */
 
 .top-bar {
-    padding: 20px 0px;
-    background-color: #70caae;
+	padding: 20px 0px;
+	background-color: #70caae;
 }
 
 
 /* ============================================================= LOGO-BAR ================================================================= */
 
 #logo-bar {
-    margin-top: 30px;
-    margin-bottom: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 
 /* ------------------- list-socials ------------------- */
 
 ul#list-socials {
-    padding-top: 40px;
+	padding-top: 40px;
 }
 
 ul#list-socials li {
-    padding-right: 10px;
+	padding-right: 10px;
 }
 
 ul#list-socials li a {
-    color: #0a0a0a;
-    font-size: 40px;
-    display: block;
-    padding: 6px 12px;
+	color: #0a0a0a;
+	font-size: 40px;
+	display: block;
+	padding: 6px 12px;
 }
 
 ul#list-socials li:last-child {
-    padding-right: 0;
+	padding-right: 0;
 }
 
 ul#list-socials li:hover a {
-    color: #489158;
+	color: #489158;
 }
 
 
 /* --------------------------- search-box -------------------------- */
 
 form#search {
-    position: relative;
-    display: flex;
-    padding: 10px 0px;
-    margin-top: 20px;
+	position: relative;
+	display: flex;
+	padding: 10px 0px;
+	margin-top: 20px;
 }
 
 .search-txt {
-    position: absolute;
-    border: none;
-    background: none;
-    outline: none;
-    font-size: 16px;
-    transition: 0.6s;
-    line-height: 40px;
-    width: 0px;
-    bottom: 10px;
-    right: 50px;
+	position: absolute;
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 16px;
+	transition: 0.6s;
+	line-height: 40px;
+	width: 0px;
+	bottom: 10px;
+	right: 50px;
 }
 
 form#search:hover .search-txt {
-    height: 40px;
-    border-bottom: 1px solid rgb(27, 17, 17);
-    color: black;
-    width: 200px;
-    bottom: 10px;
-    right: 50px;
+	height: 40px;
+	border-bottom: 1px solid rgb(27, 17, 17);
+	color: black;
+	width: 200px;
+	bottom: 10px;
+	right: 50px;
 }
 
 form#search .icon-search {
-    outline: none;
-    border: none;
-    background: none;
-    padding: 12px 28px 12px 22px;
+	outline: none;
+	border: none;
+	background: none;
+	padding: 12px 28px 12px 22px;
 }
 
 
@@ -112,57 +112,57 @@ form#search .icon-search {
 /* --------------------------- main-menu -------------------------- */
 
 ul#main-menu {
-    flex: 800px;
+	flex: 800px;
 }
 
 ul#main-menu li {
-    position: relative;
+	position: relative;
 }
 
 ul#main-menu li a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #000000;
-    padding: 8px 15px;
-    display: block;
-    transition: all 0.2s;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #000000;
+	padding: 8px 15px;
+	display: block;
+	transition: all 0.2s;
 }
 
 ul#main-menu>li:hover>a {
-    font-weight: 500;
-    transition: all 0.2s;
-    background: #128a4e;
-    color: #fefefe;
+	font-weight: 500;
+	transition: all 0.2s;
+	background: #128a4e;
+	color: #fefefe;
 }
 
 ul#main-menu .sub-menu {
-    z-index: 1;
-    position: absolute;
-    background-color: white;
-    width: 350px;
-    list-style: none;
-    border-top: 2px solid rgb(61, 60, 60);
-    border-bottom: 2px solid rgb(61, 60, 60);
-    display: none;
+	z-index: 1;
+	position: absolute;
+	background-color: white;
+	width: 350px;
+	list-style: none;
+	border-top: 2px solid rgb(61, 60, 60);
+	border-bottom: 2px solid rgb(61, 60, 60);
+	display: none;
 }
 
 ul#main-menu li:hover>ul.sub-menu {
-    display: block;
+	display: block;
 }
 
 ul#main-menu .sub-menu a {
-    display: block;
-    text-transform: capitalize;
-    font-size: 14px;
-    padding: 5px 30px 5px 20px;
-    border-bottom: 1px solid rgb(163, 159, 159);
+	display: block;
+	text-transform: capitalize;
+	font-size: 14px;
+	padding: 5px 30px 5px 20px;
+	border-bottom: 1px solid rgb(163, 159, 159);
 }
 
 ul#main-menu .sub-menu>li:hover>a {
-    border-bottom: 1px solid rgb(61, 60, 60);
-    color: #4e5a7b;
+	border-bottom: 1px solid rgb(61, 60, 60);
+	color: #4e5a7b;
 }
 
 
@@ -171,34 +171,56 @@ ul#main-menu .sub-menu>li:hover>a {
 } */
 
 ul#main-menu .sub-menu .sub-menu {
-    left: 350px;
-    top: -2px;
+	left: 350px;
+	top: -2px;
 }
 
 
 /* --------------------------- đăng nhập và đăng ký -------------------------- */
 
 .account {
-    margin-right: 20px;
+	margin-right: 20px;
 }
 
 .account::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f007";
-    font-size: 20px;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f007";
+	font-size: 20px;
 }
 
 .account a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: 600;
-    display: inline-block;
-    padding: 0px 5px;
-    margin-left: 10px;
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	font-weight: 600;
+	display: inline-block;
+	padding: 0px 5px;
+	margin-left: 10px;
 }
 
 .account a:hover {
-    color: #2d3436;
+	color: #2d3436;
+}
+
+.badge {
+	padding-left: 9px;
+	padding-right: 9px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+	background-color: #c67605;
+}
+
+#lblCartCount {
+	font-size: 12px;
+	background: #ff0000;
+	color: #fff;
+	padding: 0 5px;
+	vertical-align: top;
+	margin-left: -10px;
 }

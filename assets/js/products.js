@@ -178,6 +178,11 @@ var productArray = [{
 
 ];
 
+function getProductIndex(productid) 
+{
+	return productArray.findIndex(e => e.productId == productid);
+}
+
 function getProductSlice(start, end) 
 {
 	return productArray.slice(start, end);

@@ -28,6 +28,7 @@
 
 	<!-- js local include -->
 	<script type="text/javascript" src="assets/js/products.js"></script>
+	<script type="text/javascript" src="assets/js/cart.js"></script>
 
 
 	<script>
@@ -45,10 +46,7 @@
 				}
 			}
 		}
-		function getProductIndex(productid) 
-		{
-			return productArray.findIndex(e => e.productId == productid);
-		}
+
 
 		var productid = GetURLParameter('productid');
 		var productIndex = getProductIndex(productid);
@@ -167,8 +165,8 @@
 										<span class="number">1</span>
 									</div>
 									<div class="purchase">
-										<a href="" class="add-cart">Thêm giỏ hàng</a> 
-										<a href="" class="buy-now">Mua ngay</a>
+										<a href="javascript:addToCart(${productArray[productIndex].productId})" class="add-cart">Thêm giỏ hàng</a> 
+										<a href="javascript:addToCart(${productArray[productIndex].productId})" class="buy-now">Mua ngay</a>
 									</div>
 									<span class="payments">Hình thức thanh toán</span>
 								</div>`

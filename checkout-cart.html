@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GreenHOLO | Giỏ hàng</title>
+
+	<!-- style -->
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/global.css">
+	<link rel="stylesheet" href="assets/css/header.css">
+	<link rel="stylesheet" href="assets/css/footer.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+	<link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+
+	<script src="assets/js/plugins/jquery-3.6.0.min.js"></script>
+
+	<script src="assets/js/plugins/popper.js"></script>
+	<script src="assets/js/plugins/bootstrap.min.js"></script>
+
+
+	<!-- js local include -->
+	<script  src="assets/js/products.js"></script>
+	<script  src="assets/js/cart.js"></script>
+
+	<script>
+		$(function () {
+			$("#header").load("./views/header.html");
+			$("#footer").load("./views/footer.html");
+		});
+	</script>
+
+
+	<style>
+		div.cart-container {
+			max-width: 1170px;
+			margin: auto;
+			padding-bottom: 10px;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<div id="header"></div>
+
+	<div class="cart-container">
+		<h2>Giỏ hàng</h2>
+		<hr>
+		<divs>
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Sản phẩm</th>
+						<th scope="col">Đơn giá</th>
+						<th scope="col">Số lượng</th>
+						<th scope="col">Thành tiền</th>
+					</tr>
+				</thead>
+				<tbody id="cart">
+						<script defer>
+							$(function() {
+								var html = ``;
+								var i=0;
+								var sum=0;
+							getCart().forEach(e => {
+								i++;
+								html += `
+								<tr >
+									<th scope="row">${i}</th>
+									<td>${productArray[getProductIndex(e.productId)].name}</td>
+									<td>${productArray[getProductIndex(e.productId)].price} đ</td>
+									<td>${e.quantity}</td>
+									<td>${productArray[getProductIndex(e.productId)].price * e.quantity} đ</td> 
+								</tr>`
+								sum += productArray[getProductIndex(e.productId)].price * e.quantity;
+							});
+							html += `
+								<tr>
+									<th scope="row" >Tổng</th>
+									<td colspan="3"></td>
+									<td>${sum} đ</td>
+								</tr>`;
+							$("#cart").html(html);
+							});
+							function procedureCart() 
+							{
+								alert("Đơn hàng đã đặt thành công.\n Nhấn OK để quay lại trang chủ");
+								sessionStorage.removeItem("cart");
+								window.location.href = "index.html";
+							}
+						</script>
+				</tbody>
+			</table>
+			<a class="btn btn-primary" href="javascript:procedureCart()">Đặt hàng</a>
+		</div>
+
+	</div>
+
+	<div id="footer"></div>
+</body>

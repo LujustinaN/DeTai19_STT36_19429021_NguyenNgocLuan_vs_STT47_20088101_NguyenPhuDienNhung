@@ -1,6 +1,3 @@
-<!-- TODO: them xu huong link -->
-<!-- TODO: fix footer "Thoi trang thu dong" -->
-<!-- TODO: fix footer "Thoi trang thu dong" -->
 <!-- ==================================================================================== WP-HEADER ====================================================================================== -->
 <header id="wp-header">
     <!-- ===================================== TOP-BAR =================================== -->
@@ -33,14 +30,23 @@
                 </a>
             </div>
             <!-- end logo -->
-
-            <form id="search">
-                <input type="text" class="search-txt" placeholder="Tìm kiếm sản phẩm">
-                <button class="icon-search">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
-            <!-- end form search -->
+			<div>
+				<form id="search">
+					<input type="text" class="search-txt" placeholder="Tìm kiếm sản phẩm">
+					<button class="icon-search">
+						<i class="fas fa-search"></i>
+					</button>
+				</form>
+				<!-- end form search -->
+	
+				<a id="cart-icon" href="checkout-cart.html">
+					<i class="fa" style="font-size:24px">&#xf07a;</i>
+					<span class='badge badge-warning' id='lblCartCount'>0</span>
+					<script>
+						$("#lblCartCount").html(getCart().length.toString());
+					</script>
+				</a>
+			</div>
 
         </div>
         <!-- end logo-bar -->

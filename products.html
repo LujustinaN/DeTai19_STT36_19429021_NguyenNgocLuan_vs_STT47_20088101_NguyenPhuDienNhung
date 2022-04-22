@@ -24,7 +24,9 @@
 	<link rel="stylesheet" href="assets/css/plugins/slick.css">
 	<script src="assets/js/plugins/slick.min.js"></script>
 	
-	<script src="assets/js/products.js"></script>
+	<!-- js local include -->
+	<script type="text/javascript" src="assets/js/products.js"></script>
+	<script type="text/javascript" src="assets/js/cart.js"></script>
 
     <script>
         $(function() {
@@ -81,7 +83,7 @@
 													<del>${e.pricedel} đ</del>
 												</div>
 												<div class="add-cart">
-													<a href="">Thêm giỏ hàng</a>
+													<a href="javascript:addToCart(${e.productId})">Thêm giỏ hàng</a>
 												</div>
 											</div>
 										</li>`;
